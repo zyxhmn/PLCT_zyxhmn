@@ -56,4 +56,24 @@ rosdep update
 rosdep install -r --from-paths . --ignore-src --rosdistro $ROS_DISTRO -y
 ```
 
-运行`rosdep update`报错，报错内容见[error](./error/error1.md)，在.bashrc中添加`export ROS_OS_OVERRIDE=centos:8`
+运行`rosdep update`报错，报错内容见[error1](./error/error1.md)。原因为rosdep无法识别操作系统。
+
+在.bashrc中添加`export ROS_OS_OVERRIDE=centos:8` 后，运行 `rosdep install -r --from-paths . --ignore-src --rosdistro $ROS_DISTRO -y`报错，报错内容见[error2](./error/error2.md)。
+
+1. **软件包未找到**：
+   - `boost-python3-devel`、`ros-humble-py-binding-tools` 和 `urdfdom-headers-devel` 在当前的仓库中无法找到匹配的版本。
+2. **依赖冲突**：
+   - `ros-humble-ros2-control` 依赖于 `ros-humble-ros2controlcli`，但后者无法安装，因为它需要 `python3-pygraphviz`，而该依赖项在系统中不存在。
+
+使用`rosdep check -r --from-paths . --ignore-src --rosdistro $ROS_DISTRO`命令查看所缺少的依赖项。输出内容如下：
+
+```bash
+[haltija@localhost src]$ rosdep check -r --from-paths . --ignore-src --rosdistro $ROS_DISTRO
+rosdep detected OS: [centos] aliasing it to: [rhel]
+System dependencies have not been satisfied:
+dnf     boost-python%{python3_pkgversion}-devel
+dnf     ros-humble-ros2-control
+dnf     ros-humble-py-binding-tools
+dnf     urdfdom-headers-devel
+```
+
