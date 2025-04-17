@@ -19,3 +19,8 @@
 ### [围绕对象进行规划](./docs/tutorials/planning_around_objects.md)
 
 ### [使用moveit任务构造器进行拾取和放置](./docs/tutorials/pick_and_place.md)
+
+
+
+## [机械臂视觉抓取](./docs/robotic_arm/README.md)
+
