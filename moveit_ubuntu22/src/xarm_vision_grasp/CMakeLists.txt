@@ -25,6 +25,7 @@ find_package(OpenCV REQUIRED)
 find_package(message_filters REQUIRED)
 find_package(image_geometry REQUIRED) 
 find_package(rosidl_default_generators REQUIRED)
+find_package(xarm_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/Grasp.srv"
@@ -66,10 +67,19 @@ ament_target_dependencies(arm_control_node
   tf2_ros
   tf2_geometry_msgs
   moveit_ros_planning_interface
+  xarm_msgs
 )
 
 rosidl_target_interfaces(control_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
 rosidl_target_interfaces(arm_control_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
+add_executable(gripper_test_node src/gripper_test_node.cpp)
+ament_target_dependencies(gripper_test_node
+  rclcpp
+  trajectory_msgs
+  std_srvs
+)
+
 
 target_link_libraries(xarm_vision_grasp_node ${OpenCV_LIBRARIES})
 ament_target_dependencies(xarm_vision_grasp_node
@@ -93,6 +103,7 @@ install(TARGETS
   arm_control_node
   xarm_vision_grasp_node
   tf_test_node
+  gripper_test_node
   # arm_pickup_node
   vision_node
   DESTINATION lib/${PROJECT_NAME}

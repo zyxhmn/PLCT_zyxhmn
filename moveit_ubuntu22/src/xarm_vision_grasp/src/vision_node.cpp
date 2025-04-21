@@ -120,10 +120,11 @@ private:
             return;
         }
 
-        const double fx = 615.0;
-        const double fy = 615.0;
-        const double cx_cam = 320.0;
-        const double cy_cam = 240.0;
+        const double fx = 640.51;
+        const double fy = 640.51;
+        const double cx_cam = 640.0;
+        const double cy_cam = 360.0;
+
 
         double x = (cx - cx_cam) * depth / fx;
         double y = (cy - cy_cam) * depth / fy;

@@ -8,6 +8,8 @@
 #include <memory>
 #include <thread>
 #include "xarm_vision_grasp/srv/grasp.hpp"
+#include <tf2/time.h>
+#include <tf2/LinearMath/Quaternion.h>
 
 using Grasp = xarm_vision_grasp::srv::Grasp;
 using namespace std::chrono_literals;
@@ -62,6 +64,7 @@ private:
       }
 
       tf_buffer_->transform(request->target_pose, target_world, "world", tf2::durationFromSec(1.0));
+      // tf_buffer_->transform(request->target_pose, target_world, "world", rclcpp::Duration::from_seconds(1.0));
 
       RCLCPP_INFO(this->get_logger(),
         "Target position in world frame: [%.3f, %.3f, %.3f]",
@@ -78,11 +81,23 @@ private:
       geometry_msgs::msg::Pose pre_grasp_pose;
       pre_grasp_pose.position.x = target_world.pose.position.x;
       pre_grasp_pose.position.y = target_world.pose.position.y;
-      pre_grasp_pose.position.z = target_world.pose.position.z + 0.1;
-      pre_grasp_pose.orientation.x = 1;
-      pre_grasp_pose.orientation.y = 0;
-      pre_grasp_pose.orientation.z = 0;
-      pre_grasp_pose.orientation.w = 0;
+      // pre_grasp_pose.position.z = target_world.pose.position.z + 0.1;
+      pre_grasp_pose.position.z = target_world.pose.position.z - 0.03; //抓取高度偏移
+      // test point in world1
+      // pre_grasp_pose.position.x = 0.49704;
+      // pre_grasp_pose.position.y = -0.002505;
+      // pre_grasp_pose.position.z = -0.28788;
+      tf2::Quaternion q;
+      q.setRPY(M_PI, 0, 0);  // 绕X轴旋转180度，使末端Z轴朝下
+      pre_grasp_pose.orientation.x = q.x();
+      pre_grasp_pose.orientation.y = q.y();
+      pre_grasp_pose.orientation.z = q.z();
+      pre_grasp_pose.orientation.w = q.w();
+      // 末端z轴向下
+      // pre_grasp_pose.orientation.x = 1;
+      // pre_grasp_pose.orientation.y = 0;
+      // pre_grasp_pose.orientation.z = 0;
+      // pre_grasp_pose.orientation.w = 0;
 
       if (!moveToTarget(move_group_arm, pre_grasp_pose)) {
         response->success = false;
@@ -91,7 +106,7 @@ private:
       }
 
       geometry_msgs::msg::Pose grasp_pose = pre_grasp_pose;
-      grasp_pose.position.z = target_world.pose.position.z + 0.03;
+      grasp_pose.position.z = target_world.pose.position.z ;
 
       if (!moveToTarget(move_group_arm, grasp_pose)) {
         response->success = false;
