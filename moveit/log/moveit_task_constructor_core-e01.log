@@ -1,0 +1,285 @@
+[sea@localhost ws_moveit2]$ colcon build
+Starting >>> moveit_task_constructor_msgs
+Starting >>> py_binding_tools
+Starting >>> rviz_marker_tools
+Starting >>> rosparam_shortcuts
+Finished <<< rviz_marker_tools [0.13s]
+Finished <<< rosparam_shortcuts [0.15s]
+Finished <<< py_binding_tools [0.17s]
+Finished <<< moveit_task_constructor_msgs [0.63s]
+Starting >>> moveit_task_constructor_core
+--- stderr: moveit_task_constructor_core
+/usr/bin/ld: CMakeFiles/moveit_task_constructor_core-test-cost-terms.dir/test_cost_terms.cpp.o: undefined reference to symbol '_ZN3fmt2v87vformatB5cxx11ENS0_17basic_string_viewIcEENS0_17basic_format_argsINS0_20basic_format_contextINS0_8appenderEcEEEE'
+/usr/bin/ld: /usr/lib64/libfmt.so.8: error adding symbols: DSO missing from command line
+collect2: 错误：ld 返回 1
+gmake[2]: *** [test/CMakeFiles/moveit_task_constructor_core-test-cost-terms.dir/build.make:357：test/moveit_task_constructor_core-test-cost-terms] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:681：test/CMakeFiles/moveit_task_constructor_core-test-cost-terms.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+In file included from /home/sea/ws_moveit2/src/moveit_task_constructor/core/python/bindings/src/core.h:41,
+                 from /home/sea/ws_moveit2/src/moveit_task_constructor/core/python/bindings/src/stages.h:37,
+                 from /home/sea/ws_moveit2/src/moveit_task_constructor/core/python/bindings/src/stages.cpp:35:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:48:1: 错误：expected class-name before ‘{’ token
+   48 | {
+      | ^
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:58:43: 错误：‘MoveItErrorCodes’不是命名空间‘moveit_msgs::msg’中的一个类型名
+   58 |   MoveItErrorCode(const moveit_msgs::msg::MoveItErrorCodes& code)
+      |                                           ^~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在构造函数‘moveit::core::MoveItErrorCode::MoveItErrorCode()’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:52:5: 错误：‘val’在此作
+用域中尚未声明
+   52 |     val = 0;
+      |     ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在构造函数‘moveit::core::MoveItErrorCode::MoveItErrorCode(int)’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:56:5: 错误：‘val’在此作
+用域中尚未声明
+   56 |     val = code;
+      |     ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在构造函数‘moveit::core::MoveItErrorCode::MoveItErrorCode(const int&)’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:60:5: 错误：‘val’在此作
+用域中尚未声明
+   60 |     val = code.val;
+      |     ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:60:16: 错误：对成员‘val’的请求出现在‘code’中，而后者具有非类类型‘const int’
+   60 |     val = code.val;
+      |                ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在成员函数‘moveit::core::MoveItErrorCode::operator bool() const’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:64:12: 错误：‘val’在此作
+用域中尚未声明
+   64 |     return val == moveit_msgs::msg::MoveItErrorCodes::SUCCESS;
+      |            ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:64:37: 错误：‘moveit_msgs::msg::MoveItErrorCodes’尚未声明
+   64 |     return val == moveit_msgs::msg::MoveItErrorCodes::SUCCESS;
+      |                                     ^~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在成员函数‘bool moveit::core::MoveItErrorCode::operator==(int) const’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:68:12: 错误：‘val’在此作
+用域中尚未声明
+   68 |     return val == c;
+      |            ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在成员函数‘bool moveit::core::MoveItErrorCode::operator!=(int) const’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:72:12: 错误：‘val’在此作
+用域中尚未声明
+   72 |     return val != c;
+      |            ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在函数‘std::string moveit::core::error_code_to_string(MoveItErrorCode)’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:83:22: 错误：‘class moveit::core::MoveItErrorCode’ has no member named ‘val’
+   83 |   switch (error_code.val)
+      |                      ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:85:41: 错误：‘SUCCESS’不
+是‘moveit::core::MoveItErrorCode’的成员
+   85 |     case moveit::core::MoveItErrorCode::SUCCESS:
+      |                                         ^~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:87:41: 错误：‘FAILURE’不
+是‘moveit::core::MoveItErrorCode’的成员
+   87 |     case moveit::core::MoveItErrorCode::FAILURE:
+      |                                         ^~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:89:41: 错误：‘PLANNING_FAILED’不是‘moveit::core::MoveItErrorCode’的成员
+   89 |     case moveit::core::MoveItErrorCode::PLANNING_FAILED:
+      |                                         ^~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:91:41: 错误：‘INVALID_MOTION_PLAN’不是‘moveit::core::MoveItErrorCode’的成员
+   91 |     case moveit::core::MoveItErrorCode::INVALID_MOTION_PLAN:
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:93:41: 错误：‘MOTION_PLAN_INVALIDATED_BY_ENVIRONMENT_CHANGE’不是‘moveit::core::MoveItErrorCode’的成员
+   93 |     case moveit::core::MoveItErrorCode::MOTION_PLAN_INVALIDATED_BY_ENVIRONMENT_CHANGE:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:95:41: 错误：‘CONTROL_FAILED’不是‘moveit::core::MoveItErrorCode’的成员
+   95 |     case moveit::core::MoveItErrorCode::CONTROL_FAILED:
+      |                                         ^~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:97:41: 错误：‘UNABLE_TO_AQUIRE_SENSOR_DATA’不是‘moveit::core::MoveItErrorCode’的成员
+   97 |     case moveit::core::MoveItErrorCode::UNABLE_TO_AQUIRE_SENSOR_DATA:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:99:41: 错误：‘TIMED_OUT’不是‘moveit::core::MoveItErrorCode’的成员
+   99 |     case moveit::core::MoveItErrorCode::TIMED_OUT:
+      |                                         ^~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:101:41: 错误：‘PREEMPTED’不是‘moveit::core::MoveItErrorCode’的成员
+  101 |     case moveit::core::MoveItErrorCode::PREEMPTED:
+      |                                         ^~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:103:41: 错误：‘START_STATE_IN_COLLISION’不是‘moveit::core::MoveItErrorCode’的成员
+  103 |     case moveit::core::MoveItErrorCode::START_STATE_IN_COLLISION:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:105:41: 错误：‘START_STATE_VIOLATES_PATH_CONSTRAINTS’不是‘moveit::core::MoveItErrorCode’的成员
+  105 |     case moveit::core::MoveItErrorCode::START_STATE_VIOLATES_PATH_CONSTRAINTS:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:107:41: 错误：‘GOAL_IN_COLLISION’不是‘moveit::core::MoveItErrorCode’的成员
+  107 |     case moveit::core::MoveItErrorCode::GOAL_IN_COLLISION:
+      |                                         ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:109:41: 错误：‘GOAL_VIOLATES_PATH_CONSTRAINTS’不是‘moveit::core::MoveItErrorCode’的成员
+  109 |     case moveit::core::MoveItErrorCode::GOAL_VIOLATES_PATH_CONSTRAINTS:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:111:41: 错误：‘GOAL_CONSTRAINTS_VIOLATED’不是‘moveit::core::MoveItErrorCode’的成员
+  111 |     case moveit::core::MoveItErrorCode::GOAL_CONSTRAINTS_VIOLATED:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:113:41: 错误：‘INVALID_GROUP_NAME’不是‘moveit::core::MoveItErrorCode’的成员
+  113 |     case moveit::core::MoveItErrorCode::INVALID_GROUP_NAME:
+      |                                         ^~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:115:41: 错误：‘INVALID_GOAL_CONSTRAINTS’不是‘moveit::core::MoveItErrorCode’的成员
+  115 |     case moveit::core::MoveItErrorCode::INVALID_GOAL_CONSTRAINTS:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:117:41: 错误：‘INVALID_ROBOT_STATE’不是‘moveit::core::MoveItErrorCode’的成员
+  117 |     case moveit::core::MoveItErrorCode::INVALID_ROBOT_STATE:
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:119:41: 错误：‘INVALID_LINK_NAME’不是‘moveit::core::MoveItErrorCode’的成员
+  119 |     case moveit::core::MoveItErrorCode::INVALID_LINK_NAME:
+      |                                         ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:121:41: 错误：‘INVALID_OBJECT_NAME’不是‘moveit::core::MoveItErrorCode’的成员
+  121 |     case moveit::core::MoveItErrorCode::INVALID_OBJECT_NAME:
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:123:41: 错误：‘FRAME_TRANSFORM_FAILURE’不是‘moveit::core::MoveItErrorCode’的成员
+  123 |     case moveit::core::MoveItErrorCode::FRAME_TRANSFORM_FAILURE:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:125:41: 错误：‘COLLISION_CHECKING_UNAVAILABLE’不是‘moveit::core::MoveItErrorCode’的成员
+  125 |     case moveit::core::MoveItErrorCode::COLLISION_CHECKING_UNAVAILABLE:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:127:41: 错误：‘ROBOT_STATE_STALE’不是‘moveit::core::MoveItErrorCode’的成员
+  127 |     case moveit::core::MoveItErrorCode::ROBOT_STATE_STALE:
+      |                                         ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:129:41: 错误：‘SENSOR_INFO_STALE’不是‘moveit::core::MoveItErrorCode’的成员
+  129 |     case moveit::core::MoveItErrorCode::SENSOR_INFO_STALE:
+      |                                         ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:131:41: 错误：‘COMMUNICATION_FAILURE’不是‘moveit::core::MoveItErrorCode’的成员
+  131 |     case moveit::core::MoveItErrorCode::COMMUNICATION_FAILURE:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:133:41: 错误：‘NO_IK_SOLUTION’不是‘moveit::core::MoveItErrorCode’的成员
+  133 |     case moveit::core::MoveItErrorCode::NO_IK_SOLUTION:
+      |                                         ^~~~~~~~~~~~~~
+In file included from /home/sea/ws_moveit2/src/moveit_task_constructor/core/python/bindings/src/core.h:41,
+                 from /home/sea/ws_moveit2/src/moveit_task_constructor/core/python/bindings/src/core.cpp:35:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:48:1: 错误：expected class-name before ‘{’ token
+   48 | {
+      | ^
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:58:43: 错误：‘MoveItErrorCodes’不是命名空间‘moveit_msgs::msg’中的一个类型名
+   58 |   MoveItErrorCode(const moveit_msgs::msg::MoveItErrorCodes& code)
+      |                                           ^~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在构造函数‘moveit::core::MoveItErrorCode::MoveItErrorCode()’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:52:5: 错误：‘val’在此作
+用域中尚未声明
+   52 |     val = 0;
+      |     ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在构造函数‘moveit::core::MoveItErrorCode::MoveItErrorCode(int)’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:56:5: 错误：‘val’在此作
+用域中尚未声明
+   56 |     val = code;
+      |     ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在构造函数‘moveit::core::MoveItErrorCode::MoveItErrorCode(const int&)’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:60:5: 错误：‘val’在此作
+用域中尚未声明
+   60 |     val = code.val;
+      |     ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:60:16: 错误：对成员‘val’的请求出现在‘code’中，而后者具有非类类型‘const int’
+   60 |     val = code.val;
+      |                ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在成员函数‘moveit::core::MoveItErrorCode::operator bool() const’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:64:12: 错误：‘val’在此作
+用域中尚未声明
+   64 |     return val == moveit_msgs::msg::MoveItErrorCodes::SUCCESS;
+      |            ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:64:37: 错误：‘moveit_msgs::msg::MoveItErrorCodes’尚未声明
+   64 |     return val == moveit_msgs::msg::MoveItErrorCodes::SUCCESS;
+      |                                     ^~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在成员函数‘bool moveit::core::MoveItErrorCode::operator==(int) const’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:68:12: 错误：‘val’在此作
+用域中尚未声明
+   68 |     return val == c;
+      |            ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在成员函数‘bool moveit::core::MoveItErrorCode::operator!=(int) const’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:72:12: 错误：‘val’在此作
+用域中尚未声明
+   72 |     return val != c;
+      |            ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h: 在函数‘std::string moveit::core::error_code_to_string(MoveItErrorCode)’中:
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:83:22: 错误：‘class moveit::core::MoveItErrorCode’ has no member named ‘val’
+   83 |   switch (error_code.val)
+      |                      ^~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:85:41: 错误：‘SUCCESS’不
+是‘moveit::core::MoveItErrorCode’的成员
+   85 |     case moveit::core::MoveItErrorCode::SUCCESS:
+      |                                         ^~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:87:41: 错误：‘FAILURE’不
+是‘moveit::core::MoveItErrorCode’的成员
+   87 |     case moveit::core::MoveItErrorCode::FAILURE:
+      |                                         ^~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:89:41: 错误：‘PLANNING_FAILED’不是‘moveit::core::MoveItErrorCode’的成员
+   89 |     case moveit::core::MoveItErrorCode::PLANNING_FAILED:
+      |                                         ^~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:91:41: 错误：‘INVALID_MOTION_PLAN’不是‘moveit::core::MoveItErrorCode’的成员
+   91 |     case moveit::core::MoveItErrorCode::INVALID_MOTION_PLAN:
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:93:41: 错误：‘MOTION_PLAN_INVALIDATED_BY_ENVIRONMENT_CHANGE’不是‘moveit::core::MoveItErrorCode’的成员
+   93 |     case moveit::core::MoveItErrorCode::MOTION_PLAN_INVALIDATED_BY_ENVIRONMENT_CHANGE:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:95:41: 错误：‘CONTROL_FAILED’不是‘moveit::core::MoveItErrorCode’的成员
+   95 |     case moveit::core::MoveItErrorCode::CONTROL_FAILED:
+      |                                         ^~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:97:41: 错误：‘UNABLE_TO_AQUIRE_SENSOR_DATA’不是‘moveit::core::MoveItErrorCode’的成员
+   97 |     case moveit::core::MoveItErrorCode::UNABLE_TO_AQUIRE_SENSOR_DATA:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:99:41: 错误：‘TIMED_OUT’不是‘moveit::core::MoveItErrorCode’的成员
+   99 |     case moveit::core::MoveItErrorCode::TIMED_OUT:
+      |                                         ^~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:101:41: 错误：‘PREEMPTED’不是‘moveit::core::MoveItErrorCode’的成员
+  101 |     case moveit::core::MoveItErrorCode::PREEMPTED:
+      |                                         ^~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:103:41: 错误：‘START_STATE_IN_COLLISION’不是‘moveit::core::MoveItErrorCode’的成员
+  103 |     case moveit::core::MoveItErrorCode::START_STATE_IN_COLLISION:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:105:41: 错误：‘START_STATE_VIOLATES_PATH_CONSTRAINTS’不是‘moveit::core::MoveItErrorCode’的成员
+  105 |     case moveit::core::MoveItErrorCode::START_STATE_VIOLATES_PATH_CONSTRAINTS:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:107:41: 错误：‘GOAL_IN_COLLISION’不是‘moveit::core::MoveItErrorCode’的成员
+  107 |     case moveit::core::MoveItErrorCode::GOAL_IN_COLLISION:
+      |                                         ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:109:41: 错误：‘GOAL_VIOLATES_PATH_CONSTRAINTS’不是‘moveit::core::MoveItErrorCode’的成员
+  109 |     case moveit::core::MoveItErrorCode::GOAL_VIOLATES_PATH_CONSTRAINTS:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:111:41: 错误：‘GOAL_CONSTRAINTS_VIOLATED’不是‘moveit::core::MoveItErrorCode’的成员
+  111 |     case moveit::core::MoveItErrorCode::GOAL_CONSTRAINTS_VIOLATED:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:113:41: 错误：‘INVALID_GROUP_NAME’不是‘moveit::core::MoveItErrorCode’的成员
+  113 |     case moveit::core::MoveItErrorCode::INVALID_GROUP_NAME:
+      |                                         ^~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:115:41: 错误：‘INVALID_GOAL_CONSTRAINTS’不是‘moveit::core::MoveItErrorCode’的成员
+  115 |     case moveit::core::MoveItErrorCode::INVALID_GOAL_CONSTRAINTS:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:117:41: 错误：‘INVALID_ROBOT_STATE’不是‘moveit::core::MoveItErrorCode’的成员
+  117 |     case moveit::core::MoveItErrorCode::INVALID_ROBOT_STATE:
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:119:41: 错误：‘INVALID_LINK_NAME’不是‘moveit::core::MoveItErrorCode’的成员
+  119 |     case moveit::core::MoveItErrorCode::INVALID_LINK_NAME:
+      |                                         ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:121:41: 错误：‘INVALID_OBJECT_NAME’不是‘moveit::core::MoveItErrorCode’的成员
+  121 |     case moveit::core::MoveItErrorCode::INVALID_OBJECT_NAME:
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:123:41: 错误：‘FRAME_TRANSFORM_FAILURE’不是‘moveit::core::MoveItErrorCode’的成员
+  123 |     case moveit::core::MoveItErrorCode::FRAME_TRANSFORM_FAILURE:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:125:41: 错误：‘COLLISION_CHECKING_UNAVAILABLE’不是‘moveit::core::MoveItErrorCode’的成员
+  125 |     case moveit::core::MoveItErrorCode::COLLISION_CHECKING_UNAVAILABLE:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:127:41: 错误：‘ROBOT_STATE_STALE’不是‘moveit::core::MoveItErrorCode’的成员
+  127 |     case moveit::core::MoveItErrorCode::ROBOT_STATE_STALE:
+      |                                         ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:129:41: 错误：‘SENSOR_INFO_STALE’不是‘moveit::core::MoveItErrorCode’的成员
+  129 |     case moveit::core::MoveItErrorCode::SENSOR_INFO_STALE:
+      |                                         ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:131:41: 错误：‘COMMUNICATION_FAILURE’不是‘moveit::core::MoveItErrorCode’的成员
+  131 |     case moveit::core::MoveItErrorCode::COMMUNICATION_FAILURE:
+      |                                         ^~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:133:41: 错误：‘NO_IK_SOLUTION’不是‘moveit::core::MoveItErrorCode’的成员
+  133 |     case moveit::core::MoveItErrorCode::NO_IK_SOLUTION:
+      |                                         ^~~~~~~~~~~~~~
+/home/sea/ws_moveit2/src/moveit_task_constructor/core/python/bindings/src/core.cpp: 在函数‘void moveit::python::export_core(pybind11::module&)’中:
+/home/sea/ws_moveit2/src/moveit_task_constructor/core/python/bindings/src/core.cpp:145:66: 错误：‘val’不是‘moveit::core::MoveItErrorCode’的成员
+  145 |             .def_readonly("val", &moveit::core::MoveItErrorCode::val, ":moveit_msgs:`MoveItErrorCodes`: error code")
+      |                                                                  ^~~
+gmake[2]: *** [python/bindings/CMakeFiles/pymoveit_mtc.dir/build.make:118：python/bindings/CMakeFiles/pymoveit_mtc.dir/src/stages.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[2]: *** [python/bindings/CMakeFiles/pymoveit_mtc.dir/build.make:104：python/bindings/CMakeFiles/pymoveit_mtc.dir/src/core.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:442：python/bindings/CMakeFiles/pymoveit_mtc.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
+---
+Failed   <<< moveit_task_constructor_core [10.4s, exited with code 2]
+
+Summary: 4 packages finished [11.1s]
+  1 package failed: moveit_task_constructor_core
+  1 package had stderr output: moveit_task_constructor_core
+  4 packages not processed
+[sea@localhost ws_moveit2]$

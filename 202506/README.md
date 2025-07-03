@@ -39,4 +39,3 @@ world样式
   <source src="./imgs/nav_grasp.mkv" type="video/mp4">
   您的浏览器不支持视频播放（建议使用Chrome/Firefox/Safari）
 </video>
-
