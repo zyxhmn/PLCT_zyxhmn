@@ -6,6 +6,14 @@
 pip3 install -U pytest colcon-common-extensions
 ```
 
+
+
+```bash
+sudo yum install ros-humble-ament-cmake fmt fmt-devel ros-humble-rclcpp* ros-humble-eigen3-cmake-module ros-humble-moveit-msgs ros-humble-rsl ros-humble-pybind11-vendor ros-humble-tf2-eigen ros-humble-rviz* ros-humble-rosidl-default-generators ros-humble-angles ros-humble-rclcpp-lifecycle ros-humble-common-interfaces ros-humble-eigen-stl-containers ros-humble-geometric-shapes ros-humble-kdl-parser ros-humble-ruckig ros-humble-srdfdom ros-humble-tf2-* ros-humble-control-* ros-humble-controller-* ros-humble-cv-bridge  ros-humble-graph-msgs ros-humble-warehouse-ros ros-humble-ompl ros-humble-xacro ros-humble-filters ros-humble-ackermann-msgs
+```
+
+
+
 编译moveit tutorials
 
 ```bash
@@ -64,6 +72,9 @@ ros2 launch moveit2_tutorials demo.launch.py rviz_config:=panda_moveit_config_de
 
 ![rviz_start](./imgs/rviz_start.png)
 
+```bash
 moveit_hybrid_planning moveit2_tutorial
 colcon build --symlink-install --cmake-args -DBUILD_TESTING=OFF -DCMAKE_CXX_FLAGS_RELEASE="-DBOOST_TIMER_ENABLE_DEPRECATED"
 colcon build --symlink-install --packages-select moveit_hybrid_planning moveit2_tutorials --cmake-args -DBUILD_TESTING=OFF -DCMAKE_CXX_FLAGS_RELEASE="-DBOOST_TIMER_ENABLE_DEPRECATED" -DCMAKE_EXE_LINKER_FLAGS='-fuse-ld=lld' -DCMAKE_SHARED_LINKER_FLAGS='-fuse-ld=lld'
+```
+
