@@ -64,3 +64,6 @@ ros2 launch moveit2_tutorials demo.launch.py rviz_config:=panda_moveit_config_de
 
 ![rviz_start](./imgs/rviz_start.png)
 
+moveit_hybrid_planning moveit2_tutorial
+colcon build --symlink-install --cmake-args -DBUILD_TESTING=OFF -DCMAKE_CXX_FLAGS_RELEASE="-DBOOST_TIMER_ENABLE_DEPRECATED"
+colcon build --symlink-install --packages-select moveit_hybrid_planning moveit2_tutorials --cmake-args -DBUILD_TESTING=OFF -DCMAKE_CXX_FLAGS_RELEASE="-DBOOST_TIMER_ENABLE_DEPRECATED" -DCMAKE_EXE_LINKER_FLAGS='-fuse-ld=lld' -DCMAKE_SHARED_LINKER_FLAGS='-fuse-ld=lld'
