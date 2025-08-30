@@ -1,0 +1,219 @@
+--- Packages/libmoveit_move_group_capabilities_base.so.2.5.9
++++ err_Packages/libmoveit_move_group_capabilities_base.so.2.5.9
+│┄ File has been modified after NT_GNU_BUILD_ID has been applied.
+├── readelf --wide --sections {}
+│ @@ -3,16 +3,16 @@
+│  Section Headers:
+│    [Nr] Name              Type            Address          Off    Size   ES Flg Lk Inf Al
+│    [ 0]                   NULL            0000000000000000 000000 000000 00      0   0  0
+│    [ 1] .note.gnu.property NOTE            00000000000002a8 0002a8 000030 00   A  0   0  8
+│    [ 2] .note.gnu.build-id NOTE            00000000000002d8 0002d8 000024 00   A  0   0  4
+│    [ 3] .gnu.hash         GNU_HASH        0000000000000300 000300 0004b0 00   A  4   0  8
+│    [ 4] .dynsym           DYNSYM          00000000000007b0 0007b0 001350 18   A  5   1  8
+│ -  [ 5] .dynstr           STRTAB          0000000000001b00 001b00 004080 00   A  0   0  1
+│ -  [ 6] .gnu.version      VERSYM          0000000000005b80 005b80 00019c 02   A  4   0  2
+│ +  [ 5] .dynstr           STRTAB          0000000000001b00 001b00 004081 00   A  0   0  1
+│ +  [ 6] .gnu.version      VERSYM          0000000000005b82 005b82 00019c 02   A  4   0  2
+│    [ 7] .gnu.version_r    VERNEED         0000000000005d20 005d20 0000f0 00   A  5   3  8
+│    [ 8] .rela.dyn         RELA            0000000000005e10 005e10 0005d0 18   A  4   0  8
+│    [ 9] .rela.plt         RELA            00000000000063e0 0063e0 000a98 18  AI  4  23  8
+│    [10] .init             PROGBITS        0000000000007000 007000 00001b 00  AX  0   0  4
+│    [11] .plt              PROGBITS        0000000000007020 007020 000720 10  AX  0   0 16
+│    [12] .plt.got          PROGBITS        0000000000007740 007740 000008 08  AX  0   0  8
+│    [13] .text             PROGBITS        0000000000007750 007750 00d137 00  AX  0   0 16
+├── readelf --wide --dynamic {}
+│ @@ -1,9 +1,9 @@
+│  
+│ -Dynamic section at offset 0x19318 contains 136 entries:
+│ +Dynamic section at offset 0x19318 contains 135 entries:
+│    Tag        Type                         Name/Value
+│   0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_fastrtps_c.so]
+│   0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_introspection_c.so]
+│   0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_fastrtps_cpp.so]
+│   0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_introspection_cpp.so]
+│   0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_cpp.so]
+│   0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_generator_py.so]
+│ @@ -107,33 +107,32 @@
+│   0x0000000000000001 (NEEDED)             Shared library: [librcl_logging_interface.so]
+│   0x0000000000000001 (NEEDED)             Shared library: [libfmt.so.8]
+│   0x0000000000000001 (NEEDED)             Shared library: [librcutils.so]
+│   0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]
+│   0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+│   0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+│   0x000000000000000e (SONAME)             Library soname: [libmoveit_move_group_capabilities_base.so.2.5.9]
+│ - 0x000000000000000f (RPATH)              Library rpath: [/opt/ros/humble/lib:/opt/ros/humble/lib64]
+│   0x000000000000000c (INIT)               0x7000
+│   0x000000000000000d (FINI)               0x14888
+│   0x0000000000000019 (INIT_ARRAY)         0x19268
+│   0x000000000000001b (INIT_ARRAYSZ)       24 (bytes)
+│   0x000000000000001a (FINI_ARRAY)         0x19280
+│   0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+│   0x000000006ffffef5 (GNU_HASH)           0x300
+│   0x0000000000000005 (STRTAB)             0x1b00
+│   0x0000000000000006 (SYMTAB)             0x7b0
+│ - 0x000000000000000a (STRSZ)              16512 (bytes)
+│ + 0x000000000000000a (STRSZ)              16513 (bytes)
+│   0x000000000000000b (SYMENT)             24 (bytes)
+│   0x0000000000000003 (PLTGOT)             0x19bd8
+│   0x0000000000000002 (PLTRELSZ)           2712 (bytes)
+│   0x0000000000000014 (PLTREL)             RELA
+│   0x0000000000000017 (JMPREL)             0x63e0
+│   0x0000000000000007 (RELA)               0x5e10
+│   0x0000000000000008 (RELASZ)             1488 (bytes)
+│   0x0000000000000009 (RELAENT)            24 (bytes)
+│   0x0000000000000018 (BIND_NOW)           
+│   0x000000006ffffffb (FLAGS_1)            Flags: NOW
+│   0x000000006ffffffe (VERNEED)            0x5d20
+│   0x000000006fffffff (VERNEEDNUM)         3
+│ - 0x000000006ffffff0 (VERSYM)             0x5b80
+│ + 0x000000006ffffff0 (VERSYM)             0x5b82
+│   0x000000006ffffff9 (RELACOUNT)          25
+│   0x0000000000000000 (NULL)               0x0
+├── readelf --wide --notes {}
+│ @@ -1,12 +1,12 @@
+│  
+│  Displaying notes found in: .note.gnu.property
+│    Owner                Data size 	Description
+│    GNU                  0x00000020	NT_GNU_PROPERTY_TYPE_0	      Properties: x86 feature used: x86, XMM, x86 ISA used: x86-64-baseline, x86-64-v2
+│  
+│  Displaying notes found in: .note.gnu.build-id
+│    Owner                Data size 	Description
+│ -  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)	    Build ID: 83ecc991bb0b7a1b2893ad8c953997e5f208412a
+│ +  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)	    Build ID: 9a718984e71d7a7807c6d351f1ca5e3c8d6c326f
+│  
+│  Displaying notes found in: .gnu.build.attributes
+│    Owner                Data size 	Description
+│    GA$<version>3a1              0x00000010	OPEN	    Applies to region from 0x7000 to 0x14895
+├── readelf --wide --version-info {}
+│ @@ -1,10 +1,10 @@
+│  
+│  Version symbols section '.gnu.version' contains 206 entries:
+│ - Addr: 0x0000000000005b80  Offset: 0x00005b80  Link: 4 (.dynsym)
+│ + Addr: 0x0000000000005b82  Offset: 0x00005b82  Link: 4 (.dynsym)
+│    000:   0 (*local*)       1 (*global*)      2 (CXXABI_1.3)    3 (GLIBC_2.14) 
+│    004:   4 (GLIBCXX_3.4)   1 (*global*)      5 (CXXABI_1.3.9)   1 (*global*)   
+│    008:   1 (*global*)      1 (*global*)      4 (GLIBCXX_3.4)   6 (GLIBC_2.2.5)
+│    00c:   6 (GLIBC_2.2.5)   7 (GLIBCXX_3.4.30)    1 (*global*)      8 (GLIBCXX_3.4.21) 
+│    010:   1 (*global*)      9 (GLIBC_2.4)     4 (GLIBCXX_3.4)   1 (*global*)   
+│    014:   2 (CXXABI_1.3)    4 (GLIBCXX_3.4)   1 (*global*)      8 (GLIBCXX_3.4.21) 
+│    018:   1 (*global*)      6 (GLIBC_2.2.5)   a (GLIBCXX_3.4.29)    1 (*global*)
+├── strings --all --bytes=8 {}
+│ @@ -311,15 +311,14 @@
+│  GLIBCXX_3.4.9
+│  GLIBCXX_3.4.29
+│  GLIBCXX_3.4.21
+│  GLIBCXX_3.4.30
+│  CXXABI_1.3.9
+│  GLIBCXX_3.4
+│  CXXABI_1.3
+│ -/opt/ros/humble/lib:/opt/ros/humble/lib64
+│  _context
+│  []A\A]A^A_
+│  []A\A]A^A_
+│  []A\A]A^A_
+│  ?AWAVAUATUH
+│  ([]A\A]A^A_
+│  []A\A]A^A_
+│ @@ -439,24 +438,24 @@
+│  St19_Sp_make_shared_tag
+│  St16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE
+│  St23_Sp_counted_ptr_inplaceIN14plan_execution13PlanExecutionESaIvELN9__gnu_cxx12_Lock_policyE2EE
+│  moveit_move_group_capabilities_base.move_group_c
+│  N3tf218TransformExceptionE
+│  libmoveit_move_group_capabilities_base.so.2.5.9-2.5.9-1.oe2403.x86_64.debug
+│  .shstrtab
+│ -.dynamic
+│ +.note.gnu.property
+│  .note.gnu.build-id
+│ -.gcc_except_table
+│ -.eh_frame
+│  .gnu.hash
+│ -.gnu_debuglink
+│  .gnu.version
+│ -.rela.dyn
+│ -.data.rel.ro
+│  .gnu.version_r
+│ -.eh_frame_hdr
+│ -.gnu.build.attributes
+│ +.rela.dyn
+│  .rela.plt
+│  .plt.got
+│ -.fini_array
+│ +.eh_frame_hdr
+│ +.eh_frame
+│ +.gcc_except_table
+│  .init_array
+│ -.note.gnu.property
+│ +.fini_array
+│ +.data.rel.ro
+│ +.dynamic
+│ +.gnu.build.attributes
+│ +.gnu_debuglink
+├── readelf --wide --decompress --hex-dump=.dynstr {}
+│ @@ -1025,11 +1025,12 @@
+│    0x00005ae0 474c4942 435f322e 322e3500 474c4942 GLIBC_2.2.5.GLIB
+│    0x00005af0 435f322e 31340047 4c494243 58585f33 C_2.14.GLIBCXX_3
+│    0x00005b00 2e342e39 00474c49 42435858 5f332e34 .4.9.GLIBCXX_3.4
+│    0x00005b10 2e323900 474c4942 4358585f 332e342e .29.GLIBCXX_3.4.
+│    0x00005b20 32310047 4c494243 58585f33 2e342e33 21.GLIBCXX_3.4.3
+│    0x00005b30 30004358 58414249 5f312e33 2e390047 0.CXXABI_1.3.9.G
+│    0x00005b40 4c494243 58585f33 2e340043 58584142 LIBCXX_3.4.CXXAB
+│ -  0x00005b50 495f312e 33002f6f 70742f72 6f732f68 I_1.3./opt/ros/h
+│ -  0x00005b60 756d626c 652f6c69 623a2f6f 70742f72 umble/lib:/opt/r
+│ -  0x00005b70 6f732f68 756d626c 652f6c69 62363400 os/humble/lib64.
+│ +  0x00005b50 495f312e 33000000 00000000 00000000 I_1.3...........
+│ +  0x00005b60 00000000 00000000 00000000 00000000 ................
+│ +  0x00005b70 00000000 00000000 00000000 00000000 ................
+│ +  0x00005b80 00                                  .
+├── readelf --wide --decompress --hex-dump=.gnu_debuglink {}
+│ @@ -1,8 +1,8 @@
+│  
+│  Hex dump of section '.gnu_debuglink':
+│    0x00000000 6c69626d 6f766569 745f6d6f 76655f67 libmoveit_move_g
+│    0x00000010 726f7570 5f636170 6162696c 69746965 roup_capabilitie
+│    0x00000020 735f6261 73652e73 6f2e322e 352e392d s_base.so.2.5.9-
+│    0x00000030 322e352e 392d312e 6f653234 30332e78 2.5.9-1.oe2403.x
+│ -  0x00000040 38365f36 342e6465 62756700 4e58e9c9 86_64.debug.NX..
+│ +  0x00000040 38365f36 342e6465 62756700 469faefa 86_64.debug.F...
+├── readelf --wide --decompress --hex-dump=.shstrtab {}
+│ @@ -1,22 +1,22 @@
+│  
+│  Hex dump of section '.shstrtab':
+│ -  0x00000000 002e6461 7461002e 726f6461 7461002e ..data..rodata..
+│ -  0x00000010 73687374 72746162 002e6479 6e616d69 shstrtab..dynami
+│ -  0x00000020 63002e6e 6f74652e 676e752e 6275696c c..note.gnu.buil
+│ -  0x00000030 642d6964 002e6763 635f6578 63657074 d-id..gcc_except
+│ -  0x00000040 5f746162 6c65002e 65685f66 72616d65 _table..eh_frame
+│ -  0x00000050 002e676e 752e6861 7368002e 66696e69 ..gnu.hash..fini
+│ -  0x00000060 002e676e 755f6465 6275676c 696e6b00 ..gnu_debuglink.
+│ -  0x00000070 2e64796e 73796d00 2e676e75 2e766572 .dynsym..gnu.ver
+│ -  0x00000080 73696f6e 002e7265 6c612e64 796e002e sion..rela.dyn..
+│ -  0x00000090 64617461 2e72656c 2e726f00 2e676e75 data.rel.ro..gnu
+│ -  0x000000a0 2e766572 73696f6e 5f72002e 65685f66 .version_r..eh_f
+│ -  0x000000b0 72616d65 5f686472 002e6479 6e737472 rame_hdr..dynstr
+│ -  0x000000c0 002e676e 752e6275 696c642e 61747472 ..gnu.build.attr
+│ -  0x000000d0 69627574 6573002e 62737300 2e696e69 ibutes..bss..ini
+│ -  0x000000e0 74002e72 656c612e 706c7400 2e706c74 t..rela.plt..plt
+│ -  0x000000f0 2e676f74 002e7465 7874002e 66696e69 .got..text..fini
+│ -  0x00000100 5f617272 6179002e 696e6974 5f617272 _array..init_arr
+│ -  0x00000110 6179002e 6e6f7465 2e676e75 2e70726f ay..note.gnu.pro
+│ -  0x00000120 70657274 7900                       perty.
+│ +  0x00000000 002e7368 73747274 6162002e 6e6f7465 ..shstrtab..note
+│ +  0x00000010 2e676e75 2e70726f 70657274 79002e6e .gnu.property..n
+│ +  0x00000020 6f74652e 676e752e 6275696c 642d6964 ote.gnu.build-id
+│ +  0x00000030 002e676e 752e6861 7368002e 64796e73 ..gnu.hash..dyns
+│ +  0x00000040 796d002e 64796e73 7472002e 676e752e ym..dynstr..gnu.
+│ +  0x00000050 76657273 696f6e00 2e676e75 2e766572 version..gnu.ver
+│ +  0x00000060 73696f6e 5f72002e 72656c61 2e64796e sion_r..rela.dyn
+│ +  0x00000070 002e7265 6c612e70 6c74002e 696e6974 ..rela.plt..init
+│ +  0x00000080 002e706c 742e676f 74002e74 65787400 ..plt.got..text.
+│ +  0x00000090 2e66696e 69002e72 6f646174 61002e65 .fini..rodata..e
+│ +  0x000000a0 685f6672 616d655f 68647200 2e65685f h_frame_hdr..eh_
+│ +  0x000000b0 6672616d 65002e67 63635f65 78636570 frame..gcc_excep
+│ +  0x000000c0 745f7461 626c6500 2e696e69 745f6172 t_table..init_ar
+│ +  0x000000d0 72617900 2e66696e 695f6172 72617900 ray..fini_array.
+│ +  0x000000e0 2e646174 612e7265 6c2e726f 002e6479 .data.rel.ro..dy
+│ +  0x000000f0 6e616d69 63002e64 61746100 2e627373 namic..data..bss
+│ +  0x00000100 002e676e 752e6275 696c642e 61747472 ..gnu.build.attr
+│ +  0x00000110 69627574 6573002e 676e755f 64656275 ibutes..gnu_debu
+│ +  0x00000120 676c696e 6b00                       glink.

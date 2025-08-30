@@ -1,0 +1,757 @@
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 03 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - GNU
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          107256 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         11
+  Size of section headers:           64 (bytes)
+  Number of section headers:         29
+  Section header string table index: 28
+
+Section Headers:
+  [Nr] Name              Type             Address           Offset
+       Size              EntSize          Flags  Link  Info  Align
+  [ 0]                   NULL             0000000000000000  00000000
+       0000000000000000  0000000000000000           0     0     0
+  [ 1] .note.gnu.pr[...] NOTE             00000000000002a8  000002a8
+       0000000000000030  0000000000000000   A       0     0     8
+  [ 2] .note.gnu.bu[...] NOTE             00000000000002d8  000002d8
+       0000000000000024  0000000000000000   A       0     0     4
+  [ 3] .gnu.hash         GNU_HASH         0000000000000300  00000300
+       00000000000004b0  0000000000000000   A       4     0     8
+  [ 4] .dynsym           DYNSYM           00000000000007b0  000007b0
+       0000000000001350  0000000000000018   A       5     1     8
+  [ 5] .dynstr           STRTAB           0000000000001b00  00001b00
+       0000000000004080  0000000000000000   A       0     0     1
+  [ 6] .gnu.version      VERSYM           0000000000005b80  00005b80
+       000000000000019c  0000000000000002   A       4     0     2
+  [ 7] .gnu.version_r    VERNEED          0000000000005d20  00005d20
+       00000000000000f0  0000000000000000   A       5     3     8
+  [ 8] .rela.dyn         RELA             0000000000005e10  00005e10
+       00000000000005d0  0000000000000018   A       4     0     8
+  [ 9] .rela.plt         RELA             00000000000063e0  000063e0
+       0000000000000a98  0000000000000018  AI       4    23     8
+  [10] .init             PROGBITS         0000000000007000  00007000
+       000000000000001b  0000000000000000  AX       0     0     4
+  [11] .plt              PROGBITS         0000000000007020  00007020
+       0000000000000720  0000000000000010  AX       0     0     16
+  [12] .plt.got          PROGBITS         0000000000007740  00007740
+       0000000000000008  0000000000000008  AX       0     0     8
+  [13] .text             PROGBITS         0000000000007750  00007750
+       000000000000d137  0000000000000000  AX       0     0     16
+  [14] .fini             PROGBITS         0000000000014888  00014888
+       000000000000000d  0000000000000000  AX       0     0     4
+  [15] .rodata           PROGBITS         0000000000015000  00015000
+       000000000000131b  0000000000000000   A       0     0     32
+  [16] .eh_frame_hdr     PROGBITS         000000000001631c  0001631c
+       0000000000000324  0000000000000000   A       0     0     4
+  [17] .eh_frame         PROGBITS         0000000000016640  00016640
+       0000000000001620  0000000000000000   A       0     0     8
+  [18] .gcc_except_table PROGBITS         0000000000017c60  00017c60
+       0000000000000954  0000000000000000   A       0     0     4
+  [19] .init_array       INIT_ARRAY       0000000000019268  00019268
+       0000000000000018  0000000000000008  WA       0     0     8
+  [20] .fini_array       FINI_ARRAY       0000000000019280  00019280
+       0000000000000008  0000000000000008  WA       0     0     8
+  [21] .data.rel.ro      PROGBITS         0000000000019288  00019288
+       0000000000000090  0000000000000000  WA       0     0     8
+  [22] .dynamic          DYNAMIC          0000000000019318  00019318
+       00000000000008c0  0000000000000010  WA       5     0     8
+  [23] .got              PROGBITS         0000000000019bd8  00019bd8
+       0000000000000428  0000000000000008  WA       0     0     8
+  [24] .data             PROGBITS         000000000001a000  0001a000
+       0000000000000158  0000000000000000  WA       0     0     16
+  [25] .bss              NOBITS           000000000001a160  0001a158
+       0000000000000048  0000000000000000  WA       0     0     16
+  [26] .gnu.build.a[...] NOTE             000000000001c1a8  0001a158
+       0000000000000024  0000000000000000           0     0     4
+  [27] .gnu_debuglink    PROGBITS         0000000000000000  0001a17c
+       0000000000000050  0000000000000000           0     0     4
+  [28] .shstrtab         STRTAB           0000000000000000  0001a1cc
+       0000000000000126  0000000000000000           0     0     1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  R (retain), D (mbind), l (large), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset             VirtAddr           PhysAddr
+                 FileSiz            MemSiz              Flags  Align
+  LOAD           0x0000000000000000 0x0000000000000000 0x0000000000000000
+                 0x0000000000006e78 0x0000000000006e78  R      0x1000
+  LOAD           0x0000000000007000 0x0000000000007000 0x0000000000007000
+                 0x000000000000d895 0x000000000000d895  R E    0x1000
+  LOAD           0x0000000000015000 0x0000000000015000 0x0000000000015000
+                 0x00000000000035b4 0x00000000000035b4  R      0x1000
+  LOAD           0x0000000000019268 0x0000000000019268 0x0000000000019268
+                 0x0000000000000ef0 0x0000000000000f40  RW     0x1000
+  DYNAMIC        0x0000000000019318 0x0000000000019318 0x0000000000019318
+                 0x00000000000008c0 0x00000000000008c0  RW     0x8
+  NOTE           0x00000000000002a8 0x00000000000002a8 0x00000000000002a8
+                 0x0000000000000030 0x0000000000000030  R      0x8
+  NOTE           0x00000000000002d8 0x00000000000002d8 0x00000000000002d8
+                 0x0000000000000024 0x0000000000000024  R      0x4
+  GNU_PROPERTY   0x00000000000002a8 0x00000000000002a8 0x00000000000002a8
+                 0x0000000000000030 0x0000000000000030  R      0x8
+  GNU_EH_FRAME   0x000000000001631c 0x000000000001631c 0x000000000001631c
+                 0x0000000000000324 0x0000000000000324  R      0x4
+  GNU_STACK      0x0000000000000000 0x0000000000000000 0x0000000000000000
+                 0x0000000000000000 0x0000000000000000  RW     0x10
+  GNU_RELRO      0x0000000000019268 0x0000000000019268 0x0000000000019268
+                 0x0000000000000d98 0x0000000000000d98  R      0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .note.gnu.property .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt 
+   01     .init .plt .plt.got .text .fini 
+   02     .rodata .eh_frame_hdr .eh_frame .gcc_except_table 
+   03     .init_array .fini_array .data.rel.ro .dynamic .got .data .bss 
+   04     .dynamic 
+   05     .note.gnu.property 
+   06     .note.gnu.build-id 
+   07     .note.gnu.property 
+   08     .eh_frame_hdr 
+   09     
+   10     .init_array .fini_array .data.rel.ro .dynamic .got 
+
+Dynamic section at offset 0x19318 contains 136 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_fastrtps_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_introspection_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_fastrtps_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_introspection_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_generator_py.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstatic_transform_broadcaster_node.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_constraint_sampler_manager_loader.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_plan_execution.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_default_planning_request_adapter_plugins.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_cpp.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_generator_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_planning_pipeline.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_trajectory_execution_manager.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_planning_scene_monitor.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_ros_occupancy_map_monitor.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_robot_model_loader.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_kinematics_plugin_loader.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_rdf_loader.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_collision_plugin_loader.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libcollision_detector_bullet_plugin.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_butterworth_filter.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [librclcpp_lifecycle.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librcl_lifecycle.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [liblifecycle_msgs__rosidl_typesupport_introspection_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [liblifecycle_msgs__rosidl_typesupport_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [liblifecycle_msgs__rosidl_generator_py.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [liblifecycle_msgs__rosidl_typesupport_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [liblifecycle_msgs__rosidl_generator_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librsl.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_collision_distance_field.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_collision_detection_bullet.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libBulletDynamics.so.2.87]
+ 0x0000000000000001 (NEEDED)             Shared library: [libBulletCollision.so.2.87]
+ 0x0000000000000001 (NEEDED)             Shared library: [libLinearMath.so.2.87]
+ 0x0000000000000001 (NEEDED)             Shared library: [libBulletSoftBody.so.2.87]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_dynamics_solver.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libkdl_parser.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_constraint_samplers.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_distance_field.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_kinematics_metrics.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_planning_interface.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_planning_request_adapter.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_planning_scene.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_kinematic_constraints.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_collision_detection_fcl.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_collision_detection.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libfcl.so.0.7]
+ 0x0000000000000001 (NEEDED)             Shared library: [libccd.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [liboctomap.so.1.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [liboctomath.so.1.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_smoothing_base.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_test_utils.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_trajectory_processing.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_robot_trajectory.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_robot_state.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [liborocos-kdl.so.1.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_robot_model.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_exceptions.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_kinematics_base.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libsrdfdom.so.2.0.4]
+ 0x0000000000000001 (NEEDED)             Shared library: [libruckig.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_transforms.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtf2_ros.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librclcpp_action.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librcl_action.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtf2.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtf2_msgs__rosidl_typesupport_fastrtps_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtf2_msgs__rosidl_typesupport_introspection_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtf2_msgs__rosidl_typesupport_introspection_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtf2_msgs__rosidl_typesupport_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtf2_msgs__rosidl_generator_py.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtf2_msgs__rosidl_typesupport_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtf2_msgs__rosidl_generator_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgeometric_shapes.so.2.1.3]
+ 0x0000000000000001 (NEEDED)             Shared library: [libvisualization_msgs__rosidl_typesupport_fastrtps_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libvisualization_msgs__rosidl_typesupport_fastrtps_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libvisualization_msgs__rosidl_typesupport_introspection_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libvisualization_msgs__rosidl_typesupport_introspection_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libvisualization_msgs__rosidl_typesupport_cpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libvisualization_msgs__rosidl_generator_py.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libvisualization_msgs__rosidl_typesupport_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libvisualization_msgs__rosidl_generator_c.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libresource_retriever.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libcurl.so.4]
+ 0x0000000000000001 (NEEDED)             Shared library: [librandom_numbers.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libassimp.so.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libqhull_r.so.8.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmoveit_utils.so.2.5.9]
+ 0x0000000000000001 (NEEDED)             Shared library: [libboost_iostreams.so.1.83.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libboost_regex.so.1.83.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libboost_serialization.so.1.83.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmessage_filters.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librclcpp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [liblibstatistics_collector.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librcl.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librmw_implementation.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librcl_logging_spdlog.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [librcl_logging_interface.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libfmt.so.8]
+ 0x0000000000000001 (NEEDED)             Shared library: [librcutils.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x000000000000000e (SONAME)             Library soname: [libmoveit_move_group_capabilities_base.so.2.5.9]
+ 0x000000000000000f (RPATH)              Library rpath: [/opt/ros/humble/lib:/opt/ros/humble/lib64]
+ 0x000000000000000c (INIT)               0x7000
+ 0x000000000000000d (FINI)               0x14888
+ 0x0000000000000019 (INIT_ARRAY)         0x19268
+ 0x000000000000001b (INIT_ARRAYSZ)       24 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x19280
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x300
+ 0x0000000000000005 (STRTAB)             0x1b00
+ 0x0000000000000006 (SYMTAB)             0x7b0
+ 0x000000000000000a (STRSZ)              16512 (bytes)
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x19bd8
+ 0x0000000000000002 (PLTRELSZ)           2712 (bytes)
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000017 (JMPREL)             0x63e0
+ 0x0000000000000007 (RELA)               0x5e10
+ 0x0000000000000008 (RELASZ)             1488 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x0000000000000018 (BIND_NOW)           
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW
+ 0x000000006ffffffe (VERNEED)            0x5d20
+ 0x000000006fffffff (VERNEEDNUM)         3
+ 0x000000006ffffff0 (VERSYM)             0x5b80
+ 0x000000006ffffff9 (RELACOUNT)          25
+ 0x0000000000000000 (NULL)               0x0
+
+Relocation section '.rela.dyn' at offset 0x5e10 contains 62 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name + Addend
+000000019268  000000000008 R_X86_64_RELATIVE                    7ff0
+000000019270  000000000008 R_X86_64_RELATIVE                    7d90
+000000019278  000000000008 R_X86_64_RELATIVE                    7e90
+000000019280  000000000008 R_X86_64_RELATIVE                    7fb0
+00000001a000  000000000008 R_X86_64_RELATIVE                    1a000
+00000001a010  000000000008 R_X86_64_RELATIVE                    15033
+00000001a018  000000000008 R_X86_64_RELATIVE                    154d0
+00000001a030  000000000008 R_X86_64_RELATIVE                    15033
+00000001a038  000000000008 R_X86_64_RELATIVE                    154d0
+00000001a050  000000000008 R_X86_64_RELATIVE                    15033
+00000001a058  000000000008 R_X86_64_RELATIVE                    154d0
+00000001a070  000000000008 R_X86_64_RELATIVE                    1503a
+00000001a078  000000000008 R_X86_64_RELATIVE                    154d0
+00000001a090  000000000008 R_X86_64_RELATIVE                    15133
+00000001a098  000000000008 R_X86_64_RELATIVE                    160e8
+00000001a0b0  000000000008 R_X86_64_RELATIVE                    15133
+00000001a0b8  000000000008 R_X86_64_RELATIVE                    160e8
+00000001a0d0  000000000008 R_X86_64_RELATIVE                    1514b
+00000001a0d8  000000000008 R_X86_64_RELATIVE                    160e8
+00000001a0f0  000000000008 R_X86_64_RELATIVE                    1515c
+00000001a0f8  000000000008 R_X86_64_RELATIVE                    160e8
+00000001a110  000000000008 R_X86_64_RELATIVE                    15171
+00000001a118  000000000008 R_X86_64_RELATIVE                    160e8
+00000001a130  000000000008 R_X86_64_RELATIVE                    15188
+00000001a138  000000000008 R_X86_64_RELATIVE                    160e8
+000000019288  001400000001 R_X86_64_64       0000000000000000 _ZTVN10__cxxabiv1[...]@CXXABI_1.3 + 10
+000000019290  007500000001 R_X86_64_64       0000000000016160 _ZTSSt11_Mutex_ba[...] + 0
+000000019298  003100000001 R_X86_64_64       0000000000000000 _ZTVN10__cxxabiv1[...]@CXXABI_1.3 + 10
+0000000192b0  003100000001 R_X86_64_64       0000000000000000 _ZTVN10__cxxabiv1[...]@CXXABI_1.3 + 10
+000000019300  003100000001 R_X86_64_64       0000000000000000 _ZTVN10__cxxabiv1[...]@CXXABI_1.3 + 10
+0000000192a0  00b600000001 R_X86_64_64       00000000000161c0 _ZTSSt16_Sp_count[...] + 0
+0000000192a8  00cb00000001 R_X86_64_64       0000000000019288 _ZTISt11_Mutex_ba[...] + 0
+0000000192b8  008d00000001 R_X86_64_64       0000000000016200 _ZTSSt23_Sp_count[...] + 0
+0000000192c0  008f00000001 R_X86_64_64       0000000000019298 _ZTISt16_Sp_count[...] + 0
+0000000192d0  008200000001 R_X86_64_64       00000000000192b0 _ZTISt23_Sp_count[...] + 0
+0000000192d8  007000000001 R_X86_64_64       0000000000009bf0 _ZNSt23_Sp_counte[...] + 0
+0000000192e0  00c700000001 R_X86_64_64       0000000000009c00 _ZNSt23_Sp_counte[...] + 0
+0000000192e8  006200000001 R_X86_64_64       0000000000009c10 _ZNSt23_Sp_counte[...] + 0
+0000000192f0  006000000001 R_X86_64_64       0000000000009c60 _ZNSt23_Sp_counte[...] + 0
+0000000192f8  006400000001 R_X86_64_64       0000000000009c20 _ZNSt23_Sp_counte[...] + 0
+000000019308  009100000001 R_X86_64_64       0000000000016300 _ZTSN3tf218Transf[...] + 0
+000000019310  003800000001 R_X86_64_64       0000000000000000 _ZTISt13runtime_error@GLIBCXX_3.4 + 0
+000000019f78  000700000006 R_X86_64_GLOB_DAT 0000000000000000 _ITM_deregisterTM[...] + 0
+000000019f80  000c00000006 R_X86_64_GLOB_DAT 0000000000000000 __cxa_finalize@GLIBC_2.2.5 + 0
+000000019f88  000f00000006 R_X86_64_GLOB_DAT 0000000000000000 _ZTVNSt7__cxx1115[...]@GLIBCXX_3.4.21 + 0
+000000019f90  007b00000006 R_X86_64_GLOB_DAT 0000000000016268 _ZZNSt19_Sp_make_[...] + 0
+000000019f98  001800000006 R_X86_64_GLOB_DAT 0000000000000000 __gmon_start__ + 0
+000000019fa0  001f00000006 R_X86_64_GLOB_DAT 0000000000000000 stderr@GLIBC_2.2.5 + 0
+000000019fa8  006800000006 R_X86_64_GLOB_DAT 0000000000009d40 _ZN6rclcpp6LoggerD1Ev + 0
+000000019fb0  002600000006 R_X86_64_GLOB_DAT 0000000000000000 _ZNSt8ios_base4In[...]@GLIBCXX_3.4 + 0
+000000019fb8  002700000006 R_X86_64_GLOB_DAT 0000000000000000 _ZTVNSt7__cxx1118[...]@GLIBCXX_3.4.21 + 0
+000000019fc0  007c00000006 R_X86_64_GLOB_DAT 00000000000192c8 _ZTVSt23_Sp_count[...] + 0
+000000019fc8  003300000006 R_X86_64_GLOB_DAT 0000000000000000 __libc_single_threaded@GLIBC_2.32 + 0
+000000019fd0  004f00000006 R_X86_64_GLOB_DAT 0000000000016190 _ZTSSt19_Sp_make_[...] + 0
+000000019fd8  003400000006 R_X86_64_GLOB_DAT 0000000000000000 _ZTVSt15basic_str[...]@GLIBCXX_3.4 + 0
+000000019fe0  003600000006 R_X86_64_GLOB_DAT 0000000000000000 _ZTTNSt7__cxx1118[...]@GLIBCXX_3.4.21 + 0
+000000019fe8  003700000006 R_X86_64_GLOB_DAT 0000000000000000 _ZTVSt9basic_iosI[...]@GLIBCXX_3.4 + 0
+000000019ff0  003d00000006 R_X86_64_GLOB_DAT 0000000000000000 _ITM_registerTMCl[...] + 0
+000000019ff8  003e00000006 R_X86_64_GLOB_DAT 0000000000000000 g_rcutils_logging[...] + 0
+00000001a088  001d00000001 R_X86_64_64       0000000000000000 __gxx_personality_v0@CXXABI_1.3 + 0
+00000001a148  00af00000001 R_X86_64_64       0000000000019300 _ZTIN3tf218Transf[...] + 0
+00000001a150  001200000001 R_X86_64_64       0000000000000000 _ZTISt12out_of_range@GLIBCXX_3.4 + 0
+
+Relocation section '.rela.plt' at offset 0x63e0 contains 113 entries:
+  Offset          Info           Type           Sym. Value    Sym. Name + Addend
+000000019bf0  000100000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN14plan_executi[...] + 0
+000000019bf8  00bf00000007 R_X86_64_JUMP_SLO 000000000000dab0 _ZN11moveit_msgs3[...] + 0
+000000019c00  005200000007 R_X86_64_JUMP_SLO 0000000000011110 _ZN11moveit_msgs3[...] + 0
+000000019c08  000200000007 R_X86_64_JUMP_SLO 0000000000000000 __cxa_begin_catch@CXXABI_1.3 + 0
+000000019c10  000300000007 R_X86_64_JUMP_SLO 0000000000000000 memcpy@GLIBC_2.14 + 0
+000000019c18  000400000007 R_X86_64_JUMP_SLO 0000000000000000 _ZSt17__throw_bad[...]@GLIBCXX_3.4 + 0
+000000019c20  00b800000007 R_X86_64_JUMP_SLO 0000000000011ac0 _ZN11moveit_msgs3[...] + 0
+000000019c28  000500000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNK16robot_traje[...] + 0
+000000019c30  000600000007 R_X86_64_JUMP_SLO 0000000000000000 _ZdlPvm@CXXABI_1.3.9 + 0
+000000019c38  00ba00000007 R_X86_64_JUMP_SLO 000000000000f380 _ZNSt12_Destroy_a[...] + 0
+000000019c40  000800000007 R_X86_64_JUMP_SLO 0000000000000000 rcutils_reset_error + 0
+000000019c48  000900000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN17planning_pip[...] + 0
+000000019c50  00b900000007 R_X86_64_JUMP_SLO 000000000000fd10 _ZSt16__do_uninit[...] + 0
+000000019c58  000a00000007 R_X86_64_JUMP_SLO 0000000000000000 _Znwm@GLIBCXX_3.4 + 0
+000000019c60  000b00000007 R_X86_64_JUMP_SLO 0000000000000000 memmove@GLIBC_2.2.5 + 0
+000000019c68  007d00000007 R_X86_64_JUMP_SLO 0000000000009e70 _ZNSt7__cxx1112ba[...] + 0
+000000019c70  009900000007 R_X86_64_JUMP_SLO 000000000000e550 _ZNSt6vectorIN11m[...] + 0
+000000019c78  006500000007 R_X86_64_JUMP_SLO 0000000000009ea0 _ZNKSt8_Rb_treeIN[...] + 0
+000000019c80  005600000007 R_X86_64_JUMP_SLO 000000000000e0d0 _ZNSt6vectorINSt7[...] + 0
+000000019c88  004c00000007 R_X86_64_JUMP_SLO 000000000000e140 _ZNSt12_Vector_ba[...] + 0
+000000019c90  00a300000007 R_X86_64_JUMP_SLO 0000000000009c70 _ZNSt16_Sp_counte[...] + 0
+000000019c98  000d00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZSt21__glibcxx_a[...]@GLIBCXX_3.4.30 + 0
+000000019ca0  00be00000007 R_X86_64_JUMP_SLO 0000000000010040 _ZSt16__do_uninit[...] + 0
+000000019ca8  000e00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN6rclcpp10get_l[...] + 0
+000000019cb0  009e00000007 R_X86_64_JUMP_SLO 0000000000014150 _ZN11moveit_msgs3[...] + 0
+000000019cb8  001000000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN6rclcpp8Durati[...] + 0
+000000019cc0  001100000007 R_X86_64_JUMP_SLO 0000000000000000 __stack_chk_fail@GLIBC_2.4 + 0
+000000019cc8  005c00000007 R_X86_64_JUMP_SLO 000000000000eff0 _ZNSt12_Vector_ba[...] + 0
+000000019cd0  00c200000007 R_X86_64_JUMP_SLO 000000000000cd40 _ZN11moveit_msgs3[...] + 0
+000000019cd8  005d00000007 R_X86_64_JUMP_SLO 000000000000ce60 _ZN11moveit_msgs3[...] + 0
+000000019ce0  006900000007 R_X86_64_JUMP_SLO 00000000000125f0 _ZN11moveit_msgs3[...] + 0
+000000019ce8  008400000007 R_X86_64_JUMP_SLO 0000000000009cc0 _ZNSt16_Sp_counte[...] + 0
+000000019cf0  001300000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN6moveit4core25[...] + 0
+000000019cf8  001500000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNSt9basic_iosIc[...]@GLIBCXX_3.4 + 0
+000000019d00  001600000007 R_X86_64_JUMP_SLO 0000000000000000 rcutils_log + 0
+000000019d08  001700000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNSt7__cxx1118ba[...]@GLIBCXX_3.4.21 + 0
+000000019d10  001900000007 R_X86_64_JUMP_SLO 0000000000000000 strlen@GLIBC_2.2.5 + 0
+000000019d18  00c000000007 R_X86_64_JUMP_SLO 000000000000ec80 _ZNSt13_Bvector_b[...] + 0
+000000019d20  001a00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZSt28__throw_bad[...]@GLIBCXX_3.4.29 + 0
+000000019d28  001b00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN17planning_pip[...] + 0
+000000019d30  001c00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN3KDLmlERKNS_8R[...] + 0
+000000019d38  004e00000007 R_X86_64_JUMP_SLO 000000000000e5b0 _ZNSt6vectorIN11m[...] + 0
+000000019d40  00ad00000007 R_X86_64_JUMP_SLO 000000000000ecc0 _ZNSt6vectorIbSaI[...] + 0
+000000019d48  005e00000007 R_X86_64_JUMP_SLO 000000000000ee40 _ZN11moveit_msgs3[...] + 0
+000000019d50  009000000007 R_X86_64_JUMP_SLO 000000000000d130 _ZN11moveit_msgs3[...] + 0
+000000019d58  006a00000007 R_X86_64_JUMP_SLO 000000000000e170 _ZNSt12_Vector_ba[...] + 0
+000000019d60  00c300000007 R_X86_64_JUMP_SLO 000000000000e250 _ZNSt6vectorIN11m[...] + 0
+000000019d68  001e00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZSt20__throw_len[...]@GLIBCXX_3.4 + 0
+000000019d70  002000000007 R_X86_64_JUMP_SLO 0000000000000000 _ZSt20__throw_out[...]@GLIBCXX_3.4 + 0
+000000019d78  002100000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNK10moveit_cpp9[...] + 0
+000000019d80  002200000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNK3KDL8Rotation[...] + 0
+000000019d88  002300000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNSdD2Ev@GLIBCXX_3.4 + 0
+000000019d90  002400000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN6rclcpp4TimeD1Ev + 0
+000000019d98  002500000007 R_X86_64_JUMP_SLO 0000000000000000 _Unwind_Resume@GCC_3.0 + 0
+000000019da0  007300000007 R_X86_64_JUMP_SLO 00000000000104e0 _ZSt16__do_uninit[...] + 0
+000000019da8  005500000007 R_X86_64_JUMP_SLO 000000000000a090 _ZNSt7__cxx1112ba[...] + 0
+000000019db0  00a500000007 R_X86_64_JUMP_SLO 0000000000013820 _ZSt16__do_uninit[...] + 0
+000000019db8  002800000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNSt8ios_baseD2Ev@GLIBCXX_3.4 + 0
+000000019dc0  002900000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN14plan_executi[...] + 0
+000000019dc8  00a600000007 R_X86_64_JUMP_SLO 000000000000e4d0 _ZNSt6vectorIN10s[...] + 0
+000000019dd0  007600000007 R_X86_64_JUMP_SLO 000000000000cc70 _ZN11sensor_msgs3[...] + 0
+000000019dd8  002a00000007 R_X86_64_JUMP_SLO 0000000000000000 __cxa_end_catch@CXXABI_1.3 + 0
+000000019de0  002b00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNK10moveit_cpp9[...] + 0
+000000019de8  002c00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNSt6localeC1Ev@GLIBCXX_3.4 + 0
+000000019df0  008500000007 R_X86_64_JUMP_SLO 000000000000e1a0 _ZNSt12_Vector_ba[...] + 0
+000000019df8  002d00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN3KDL8Rotation1[...] + 0
+000000019e00  002e00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNK10moveit_cpp9[...] + 0
+000000019e08  002f00000007 R_X86_64_JUMP_SLO 0000000000000000 __cxa_rethrow@CXXABI_1.3 + 0
+000000019e10  008000000007 R_X86_64_JUMP_SLO 000000000000d900 _ZN11moveit_msgs3[...] + 0
+000000019e18  00b700000007 R_X86_64_JUMP_SLO 0000000000009dc0 _ZNSt7__cxx1115ba[...] + 0
+000000019e20  00ae00000007 R_X86_64_JUMP_SLO 000000000000f5a0 _ZNSt6vectorIN11m[...] + 0
+000000019e28  009800000007 R_X86_64_JUMP_SLO 0000000000012140 _ZSt16__do_uninit[...] + 0
+000000019e30  003000000007 R_X86_64_JUMP_SLO 0000000000000000 strcmp@GLIBC_2.2.5 + 0
+000000019e38  006b00000007 R_X86_64_JUMP_SLO 0000000000010750 _ZN11moveit_msgs3[...] + 0
+000000019e40  00a000000007 R_X86_64_JUMP_SLO 000000000000d580 _ZN11moveit_msgs3[...] + 0
+000000019e48  005a00000007 R_X86_64_JUMP_SLO 000000000000efc0 _ZNSt12_Vector_ba[...] + 0
+000000019e50  003200000007 R_X86_64_JUMP_SLO 0000000000000000 __cxa_atexit@GLIBC_2.2.5 + 0
+000000019e58  004d00000007 R_X86_64_JUMP_SLO 000000000000e970 _ZNSt12_Vector_ba[...] + 0
+000000019e60  00b100000007 R_X86_64_JUMP_SLO 000000000000e7f0 _ZN11moveit_msgs3[...] + 0
+000000019e68  008700000007 R_X86_64_JUMP_SLO 000000000000cc00 _ZN15trajectory_m[...] + 0
+000000019e70  003500000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN3tf215duration[...] + 0
+000000019e78  007900000007 R_X86_64_JUMP_SLO 000000000000e3d0 _ZNSt6vectorIN11m[...] + 0
+000000019e80  004b00000007 R_X86_64_JUMP_SLO 000000000000f050 _ZN3tf211doTransf[...] + 0
+000000019e88  008a00000007 R_X86_64_JUMP_SLO 000000000000dee0 _ZN11moveit_msgs3[...] + 0
+000000019e90  006c00000007 R_X86_64_JUMP_SLO 0000000000013b40 _ZSt16__do_uninit[...] + 0
+000000019e98  006f00000007 R_X86_64_JUMP_SLO 0000000000012db0 _ZN11moveit_msgs3[...] + 0
+000000019ea0  00c800000007 R_X86_64_JUMP_SLO 000000000000b5e0 _ZNK10move_group1[...] + 0
+000000019ea8  003900000007 R_X86_64_JUMP_SLO 0000000000000000 _ZSt16__ostream_i[...]@GLIBCXX_3.4.9 + 0
+000000019eb0  003a00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNSt8ios_baseC2Ev@GLIBCXX_3.4 + 0
+000000019eb8  003b00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNSt6localeD1Ev@GLIBCXX_3.4 + 0
+000000019ec0  009d00000007 R_X86_64_JUMP_SLO 0000000000009fa0 _ZNSt7__cxx1112ba[...] + 0
+000000019ec8  005b00000007 R_X86_64_JUMP_SLO 000000000000de80 _ZN11moveit_msgs3[...] + 0
+000000019ed0  003c00000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNSt8ios_base4In[...]@GLIBCXX_3.4 + 0
+000000019ed8  008e00000007 R_X86_64_JUMP_SLO 000000000000eaf0 _ZNSt6vectorINSt7[...] + 0
+000000019ee0  003f00000007 R_X86_64_JUMP_SLO 0000000000000000 rcutils_logging_i[...] + 0
+000000019ee8  004000000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN17planning_pip[...] + 0
+000000019ef0  007a00000007 R_X86_64_JUMP_SLO 000000000000f020 _ZNSt12_Vector_ba[...] + 0
+000000019ef8  004100000007 R_X86_64_JUMP_SLO 0000000000000000 fwrite@GLIBC_2.2.5 + 0
+000000019f00  004200000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNK10moveit_cpp9[...] + 0
+000000019f08  004300000007 R_X86_64_JUMP_SLO 0000000000000000 memcmp@GLIBC_2.2.5 + 0
+000000019f10  00a400000007 R_X86_64_JUMP_SLO 000000000000e9a0 _ZNSt6vectorIN15t[...] + 0
+000000019f18  004400000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNK6rclcpp4Time1[...] + 0
+000000019f20  007100000007 R_X86_64_JUMP_SLO 000000000000e1d0 _ZNSt6vectorIN13g[...] + 0
+000000019f28  004500000007 R_X86_64_JUMP_SLO 0000000000000000 rcutils_logging_l[...] + 0
+000000019f30  007200000007 R_X86_64_JUMP_SLO 000000000000d270 _ZN11sensor_msgs3[...] + 0
+000000019f38  00bd00000007 R_X86_64_JUMP_SLO 00000000000102a0 _ZSt16__do_uninit[...] + 0
+000000019f40  007800000007 R_X86_64_JUMP_SLO 0000000000011540 _ZSt16__do_uninit[...] + 0
+000000019f48  008300000007 R_X86_64_JUMP_SLO 000000000000caf0 _ZN15trajectory_m[...] + 0
+000000019f50  008600000007 R_X86_64_JUMP_SLO 000000000000d340 _ZN11moveit_msgs3[...] + 0
+000000019f58  004600000007 R_X86_64_JUMP_SLO 0000000000000000 rcutils_get_error[...] + 0
+000000019f60  004700000007 R_X86_64_JUMP_SLO 0000000000000000 _ZN6rclcpp4TimeC1[...] + 0
+000000019f68  004800000007 R_X86_64_JUMP_SLO 0000000000000000 _ZNK6rclcpp8Durat[...] + 0
+000000019f70  00a700000007 R_X86_64_JUMP_SLO 000000000000e450 _ZNSt6vectorIN10s[...] + 0
+No processor specific unwind information to decode
+
+Symbol table '.dynsym' contains 206 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN14plan_execut[...]
+     2: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _[...]@CXXABI_1.3 (2)
+     3: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@GLIBC_2.14 (3)
+     4: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+     5: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK16robot_traj[...]
+     6: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@CXXABI_1.3.9 (5)
+     7: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterT[...]
+     8: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND rcutils_reset_error
+     9: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN17planning_pi[...]
+    10: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _Znwm@GLIBCXX_3.4 (4)
+    11: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBC_2.2.5 (6)
+    12: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND [...]@GLIBC_2.2.5 (6)
+    13: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4.30 (7)
+    14: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN6rclcpp10get_[...]
+    15: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4.21 (8)
+    16: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN6rclcpp8Durat[...]
+    17: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __[...]@GLIBC_2.4 (9)
+    18: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    19: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN6moveit4core2[...]
+    20: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND _[...]@CXXABI_1.3 (2)
+    21: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    22: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND rcutils_log
+    23: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4.21 (8)
+    24: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+    25: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBC_2.2.5 (6)
+    26: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4.29 (10)
+    27: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN17planning_pi[...]
+    28: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN3KDLmlERKNS_8[...]
+    29: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _[...]@CXXABI_1.3 (2)
+    30: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    31: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND [...]@GLIBC_2.2.5 (6)
+    32: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    33: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK10moveit_cpp[...]
+    34: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK3KDL8Rotatio[...]
+    35: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    36: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN6rclcpp4TimeD1Ev
+    37: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _Un[...]@GCC_3.0 (11)
+    38: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    39: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4.21 (8)
+    40: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    41: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN14plan_execut[...]
+    42: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _[...]@CXXABI_1.3 (2)
+    43: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK10moveit_cpp[...]
+    44: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    45: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN3KDL8Rotation[...]
+    46: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK10moveit_cpp[...]
+    47: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _[...]@CXXABI_1.3 (2)
+    48: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBC_2.2.5 (6)
+    49: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND _[...]@CXXABI_1.3 (2)
+    50: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBC_2.2.5 (6)
+    51: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND [...]@GLIBC_2.32 (12)
+    52: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    53: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN3tf215duratio[...]
+    54: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4.21 (8)
+    55: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    56: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    57: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4.9 (13)
+    58: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    59: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    60: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBCXX_3.4 (4)
+    61: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMC[...]
+    62: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND g_rcutils_loggin[...]
+    63: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND rcutils_logging_[...]
+    64: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN17planning_pi[...]
+    65: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBC_2.2.5 (6)
+    66: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK10moveit_cpp[...]
+    67: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND [...]@GLIBC_2.2.5 (6)
+    68: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK6rclcpp4Time[...]
+    69: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND rcutils_logging_[...]
+    70: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND rcutils_get_erro[...]
+    71: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZN6rclcpp4TimeC[...]
+    72: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _ZNK6rclcpp8Dura[...]
+    73: 000000000000e450   117 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN10[...]
+    74: 000000000000e4d0   117 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN10[...]
+    75: 000000000000f050   808 FUNC    WEAK   DEFAULT   13 _ZN3tf211doTrans[...]
+    76: 000000000000e140    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+    77: 000000000000e970    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+    78: 000000000000e5b0   571 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN11[...]
+    79: 0000000000016190    24 OBJECT  WEAK   DEFAULT   15 _ZTSSt19_Sp_make[...]
+    80: 000000000000c3b0   656 FUNC    GLOBAL DEFAULT   13 _ZNK10move_group[...]
+    81: 0000000000011ac0  1662 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+    82: 0000000000011110  1072 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+    83: 000000000000e7f0   373 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+    84: 000000000000e1a0    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+    85: 000000000000a090   351 FUNC    WEAK   DEFAULT   13 _ZNSt7__cxx1112b[...]
+    86: 000000000000e0d0   101 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorINSt[...]
+    87: 000000000000b0f0   168 FUNC    GLOBAL DEFAULT   13 _ZNK10move_group[...]
+    88: 00000000000085a0  1358 FUNC    GLOBAL DEFAULT   13 _ZN10move_group1[...]
+    89: 000000000000b1a0   874 FUNC    GLOBAL DEFAULT   13 _ZNK10move_group[...]
+    90: 000000000000efc0    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+    91: 000000000000de80    82 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+    92: 000000000000eff0    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+    93: 000000000000ce60   713 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+    94: 000000000000ee40   375 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+    95: 0000000000009dc0    68 FUNC    WEAK   DEFAULT   13 _ZNSt7__cxx1115b[...]
+    96: 0000000000009c60    10 FUNC    WEAK   DEFAULT   13 _ZNSt23_Sp_count[...]
+    97: 000000000000dab0   965 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+    98: 0000000000009c10     9 FUNC    WEAK   DEFAULT   13 _ZNSt23_Sp_count[...]
+    99: 000000000000aed0   536 FUNC    GLOBAL DEFAULT   13 _ZN10move_group1[...]
+   100: 0000000000009c20    64 FUNC    WEAK   DEFAULT   13 _ZNSt23_Sp_count[...]
+   101: 0000000000009ea0   247 FUNC    WEAK   DEFAULT   13 _ZNKSt8_Rb_treeI[...]
+   102: 000000000000e250   384 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN11[...]
+   103: 000000000000cd40   277 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   104: 0000000000009d40   121 FUNC    WEAK   DEFAULT   13 _ZN6rclcpp6LoggerD1Ev
+   105: 00000000000125f0  1975 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   106: 000000000000e170    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+   107: 0000000000010750  2493 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   108: 0000000000013b40  1546 FUNC    WEAK   DEFAULT   13 _ZSt16__do_unini[...]
+   109: 000000000000bc80  1179 FUNC    GLOBAL DEFAULT   13 _ZNK10move_group[...]
+   110: 0000000000008060  1341 FUNC    GLOBAL DEFAULT   13 _ZN10move_group1[...]
+   111: 0000000000012db0  2662 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   112: 0000000000009bf0     1 FUNC    WEAK   DEFAULT   13 _ZNSt23_Sp_count[...]
+   113: 000000000000e1d0   125 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN13[...]
+   114: 000000000000d270   197 FUNC    WEAK   DEFAULT   13 _ZN11sensor_msgs[...]
+   115: 00000000000104e0   615 FUNC    WEAK   DEFAULT   13 _ZSt16__do_unini[...]
+   116: 000000000000ee40   375 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   117: 0000000000016160    47 OBJECT  WEAK   DEFAULT   15 _ZTSSt11_Mutex_b[...]
+   118: 000000000000cc70   197 FUNC    WEAK   DEFAULT   13 _ZN11sensor_msgs[...]
+   119: 0000000000011110  1072 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   120: 0000000000011540  1406 FUNC    WEAK   DEFAULT   13 _ZSt16__do_unini[...]
+   121: 000000000000e3d0   125 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN11[...]
+   122: 000000000000f020    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+   123: 0000000000016268    16 OBJECT  UNIQUE DEFAULT   15 _ZZNSt19_Sp_make[...]
+   124: 00000000000192c8    56 OBJECT  WEAK   DEFAULT   21 _ZTVSt23_Sp_coun[...]
+   125: 0000000000009e70    33 FUNC    WEAK   DEFAULT   13 _ZNSt7__cxx1112b[...]
+   126: 0000000000010750  2493 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   127: 00000000000125f0  1975 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   128: 000000000000d900   421 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   129: 000000000000e5b0   571 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN11[...]
+   130: 00000000000192b0    24 OBJECT  WEAK   DEFAULT   21 _ZTISt23_Sp_coun[...]
+   131: 000000000000caf0   261 FUNC    WEAK   DEFAULT   13 _ZN15trajectory_[...]
+   132: 0000000000009cc0   117 FUNC    WEAK   DEFAULT   13 _ZNSt16_Sp_count[...]
+   133: 000000000000e1a0    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+   134: 000000000000d340   565 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   135: 000000000000cc00    98 FUNC    WEAK   DEFAULT   13 _ZN15trajectory_[...]
+   136: 000000000000e0d0   101 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorINSt[...]
+   137: 000000000000de80    82 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   138: 000000000000dee0   481 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   139: 000000000000ce60   713 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   140: 0000000000012db0  2662 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   141: 0000000000016200    97 OBJECT  WEAK   DEFAULT   15 _ZTSSt23_Sp_coun[...]
+   142: 000000000000eaf0   390 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorINSt[...]
+   143: 0000000000019298    24 OBJECT  WEAK   DEFAULT   21 _ZTISt16_Sp_coun[...]
+   144: 000000000000d130   317 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   145: 0000000000016300    27 OBJECT  WEAK   DEFAULT   15 _ZTSN3tf218Trans[...]
+   146: 0000000000009e10    81 FUNC    WEAK   DEFAULT   13 _ZNSt7__cxx1115b[...]
+   147: 0000000000009d40   121 FUNC    WEAK   DEFAULT   13 _ZN6rclcpp6LoggerD2Ev
+   148: 0000000000008060  1341 FUNC    GLOBAL DEFAULT   13 _ZN10move_group1[...]
+   149: 000000000000e1d0   125 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN13[...]
+   150: 0000000000009bf0     1 FUNC    WEAK   DEFAULT   13 _ZNSt23_Sp_count[...]
+   151: 000000000000d270   197 FUNC    WEAK   DEFAULT   13 _ZN11sensor_msgs[...]
+   152: 0000000000012140  1185 FUNC    WEAK   DEFAULT   13 _ZSt16__do_unini[...]
+   153: 000000000000e550    85 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN11[...]
+   154: 000000000000cc70   197 FUNC    WEAK   DEFAULT   13 _ZN11sensor_msgs[...]
+   155: 000000000000eaf0   390 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorINSt[...]
+   156: 000000000000e3d0   125 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN11[...]
+   157: 0000000000009fa0   228 FUNC    WEAK   DEFAULT   13 _ZNSt7__cxx1112b[...]
+   158: 0000000000014150  1847 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   159: 000000000000b510   202 FUNC    GLOBAL DEFAULT   13 _ZN10move_group1[...]
+   160: 000000000000d580   890 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   161: 000000000000d900   421 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   162: 000000000000caf0   261 FUNC    WEAK   DEFAULT   13 _ZN15trajectory_[...]
+   163: 0000000000009c70    76 FUNC    WEAK   DEFAULT   13 _ZNSt16_Sp_count[...]
+   164: 000000000000e9a0   322 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN15[...]
+   165: 0000000000013820   797 FUNC    WEAK   DEFAULT   13 _ZSt16__do_unini[...]
+   166: 000000000000e4d0   117 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN10[...]
+   167: 000000000000e450   117 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN10[...]
+   168: 000000000000c120   656 FUNC    GLOBAL DEFAULT   13 _ZNK10move_group[...]
+   169: 000000000000e970    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+   170: 000000000000e140    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+   171: 000000000000d340   565 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   172: 000000000000cc00    98 FUNC    WEAK   DEFAULT   13 _ZN15trajectory_[...]
+   173: 000000000000ecc0   381 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIbSa[...]
+   174: 000000000000f5a0  1892 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN11[...]
+   175: 0000000000019300    24 OBJECT  WEAK   DEFAULT   21 _ZTIN3tf218Trans[...]
+   176: 000000000000dee0   481 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   177: 000000000000e7f0   373 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   178: 000000000000efc0    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+   179: 000000000000d130   317 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   180: 000000000000eff0    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+   181: 000000000000b6f0  1423 FUNC    GLOBAL DEFAULT   13 _ZNK10move_group[...]
+   182: 00000000000161c0    52 OBJECT  WEAK   DEFAULT   15 _ZTSSt16_Sp_coun[...]
+   183: 0000000000009dc0    68 FUNC    WEAK   DEFAULT   13 _ZNSt7__cxx1115b[...]
+   184: 0000000000011ac0  1662 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   185: 000000000000fd10   813 FUNC    WEAK   DEFAULT   13 _ZSt16__do_unini[...]
+   186: 000000000000f380   536 FUNC    WEAK   DEFAULT   13 _ZNSt12_Destroy_[...]
+   187: 0000000000014150  1847 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   188: 000000000000ecc0   381 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIbSa[...]
+   189: 00000000000102a0   576 FUNC    WEAK   DEFAULT   13 _ZSt16__do_unini[...]
+   190: 0000000000010040   606 FUNC    WEAK   DEFAULT   13 _ZSt16__do_unini[...]
+   191: 000000000000dab0   965 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   192: 000000000000ec80    63 FUNC    WEAK   DEFAULT   13 _ZNSt13_Bvector_[...]
+   193: 0000000000008db0  3646 FUNC    GLOBAL DEFAULT   13 _ZNK10move_group[...]
+   194: 000000000000cd40   277 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   195: 000000000000e250   384 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN11[...]
+   196: 00000000000085a0  1358 FUNC    GLOBAL DEFAULT   13 _ZN10move_group1[...]
+   197: 000000000000e550    85 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN11[...]
+   198: 000000000000e170    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+   199: 0000000000009c00    10 FUNC    WEAK   DEFAULT   13 _ZNSt23_Sp_count[...]
+   200: 000000000000b5e0   268 FUNC    GLOBAL DEFAULT   13 _ZNK10move_group[...]
+   201: 000000000000d580   890 FUNC    WEAK   DEFAULT   13 _ZN11moveit_msgs[...]
+   202: 000000000000c640  1189 FUNC    GLOBAL DEFAULT   13 _ZNK10move_group[...]
+   203: 0000000000019288    16 OBJECT  WEAK   DEFAULT   21 _ZTISt11_Mutex_b[...]
+   204: 000000000000f020    33 FUNC    WEAK   DEFAULT   13 _ZNSt12_Vector_b[...]
+   205: 000000000000e9a0   322 FUNC    WEAK   DEFAULT   13 _ZNSt6vectorIN15[...]
+
+Histogram for `.gnu.hash' bucket list length (total of 131 buckets):
+ Length  Number     % of total  Coverage
+      0  54         ( 41.2%)
+      1  42         ( 32.1%)     31.6%
+      2  21         ( 16.0%)     63.2%
+      3  8          (  6.1%)     81.2%
+      4  5          (  3.8%)     96.2%
+      5  1          (  0.8%)    100.0%
+
+Version symbols section '.gnu.version' contains 206 entries:
+ Addr: 0x0000000000005b80  Offset: 0x00005b80  Link: 4 (.dynsym)
+  000:   0 (*local*)       1 (*global*)      2 (CXXABI_1.3)    3 (GLIBC_2.14) 
+  004:   4 (GLIBCXX_3.4)   1 (*global*)      5 (CXXABI_1.3.9)   1 (*global*)   
+  008:   1 (*global*)      1 (*global*)      4 (GLIBCXX_3.4)   6 (GLIBC_2.2.5)
+  00c:   6 (GLIBC_2.2.5)   7 (GLIBCXX_3.4.30)    1 (*global*)      8 (GLIBCXX_3.4.21) 
+  010:   1 (*global*)      9 (GLIBC_2.4)     4 (GLIBCXX_3.4)   1 (*global*)   
+  014:   2 (CXXABI_1.3)    4 (GLIBCXX_3.4)   1 (*global*)      8 (GLIBCXX_3.4.21) 
+  018:   1 (*global*)      6 (GLIBC_2.2.5)   a (GLIBCXX_3.4.29)    1 (*global*)   
+  01c:   1 (*global*)      2 (CXXABI_1.3)    4 (GLIBCXX_3.4)   6 (GLIBC_2.2.5)
+  020:   4 (GLIBCXX_3.4)   1 (*global*)      1 (*global*)      4 (GLIBCXX_3.4)
+  024:   1 (*global*)      b (GCC_3.0)       4 (GLIBCXX_3.4)   8 (GLIBCXX_3.4.21) 
+  028:   4 (GLIBCXX_3.4)   1 (*global*)      2 (CXXABI_1.3)    1 (*global*)   
+  02c:   4 (GLIBCXX_3.4)   1 (*global*)      1 (*global*)      2 (CXXABI_1.3) 
+  030:   6 (GLIBC_2.2.5)   2 (CXXABI_1.3)    6 (GLIBC_2.2.5)   c (GLIBC_2.32) 
+  034:   4 (GLIBCXX_3.4)   1 (*global*)      8 (GLIBCXX_3.4.21)    4 (GLIBCXX_3.4)
+  038:   4 (GLIBCXX_3.4)   d (GLIBCXX_3.4.9)   4 (GLIBCXX_3.4)   4 (GLIBCXX_3.4)
+  03c:   4 (GLIBCXX_3.4)   1 (*global*)      1 (*global*)      1 (*global*)   
+  040:   1 (*global*)      6 (GLIBC_2.2.5)   1 (*global*)      6 (GLIBC_2.2.5)
+  044:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  048:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  04c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  050:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  054:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  058:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  05c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  060:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  064:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  068:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  06c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  070:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  074:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  078:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  07c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  080:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  084:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  088:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  08c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  090:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  094:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  098:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  09c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0a0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0a4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0a8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0ac:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0bc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0c0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0c4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0c8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0cc:   1 (*global*)      1 (*global*)   
+
+Version needs section '.gnu.version_r' contains 3 entries:
+ Addr: 0x0000000000005d20  Offset: 0x00005d20  Link: 5 (.dynstr)
+  000000: Version: 1  File: libgcc_s.so.1  Cnt: 1
+  0x0010:   Name: GCC_3.0  Flags: none  Version: 11
+  0x0020: Version: 1  File: libc.so.6  Cnt: 4
+  0x0030:   Name: GLIBC_2.32  Flags: none  Version: 12
+  0x0040:   Name: GLIBC_2.4  Flags: none  Version: 9
+  0x0050:   Name: GLIBC_2.2.5  Flags: none  Version: 6
+  0x0060:   Name: GLIBC_2.14  Flags: none  Version: 3
+  0x0070: Version: 1  File: libstdc++.so.6  Cnt: 7
+  0x0080:   Name: GLIBCXX_3.4.9  Flags: none  Version: 13
+  0x0090:   Name: GLIBCXX_3.4.29  Flags: none  Version: 10
+  0x00a0:   Name: GLIBCXX_3.4.21  Flags: none  Version: 8
+  0x00b0:   Name: GLIBCXX_3.4.30  Flags: none  Version: 7
+  0x00c0:   Name: CXXABI_1.3.9  Flags: none  Version: 5
+  0x00d0:   Name: GLIBCXX_3.4  Flags: none  Version: 4
+  0x00e0:   Name: CXXABI_1.3  Flags: none  Version: 2
+
+Displaying notes found in: .note.gnu.property
+  Owner                Data size 	Description
+  GNU                  0x00000020	NT_GNU_PROPERTY_TYPE_0
+      Properties: x86 feature used: x86, XMM
+	x86 ISA used: x86-64-baseline, x86-64-v2
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: 83ecc991bb0b7a1b2893ad8c953997e5f208412a
+
+Displaying notes found in: .gnu.build.attributes
+  Owner                Data size 	Description
+  GA$<version>3a1      0x00000010	OPEN
+    Applies to region from 0x7000 to 0x14895

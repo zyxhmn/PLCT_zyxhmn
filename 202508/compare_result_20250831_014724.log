@@ -1,0 +1,143 @@
+================================================================================
+比较文件: libmoveit_move_group_capabilities_base.so.2.5.9
+[大小] 109112 vs 109112 bytes
+[MD5 ] ed41047923203dba3593899cd635460c vs 6fdde8d33f9f943cceee99df504985e3
+[SHA256] 2ae5d14002d1ab2dae9564b736b88d05d435a38413634c5342e0d848da7e2ef2 vs 6f44870c3b06a6114f6e902e3af3ec674beed23faf361c52d3c490f887403df8
+[file] 差异：
+--- old/file
++++ new/file
+@@ -1 +1 @@
+-err_Packages/libmoveit_move_group_capabilities_base.so.2.5.9: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=9a718984e71d7a7807c6d351f1ca5e3c8d6c326f, stripped
++Packages/libmoveit_move_group_capabilities_base.so.2.5.9: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=83ecc991bb0b7a1b2893ad8c953997e5f208412a, stripped
+[readelf -d] 差异：
+--- old/readelf-d
++++ new/readelf-d
+@@ -1,5 +1,5 @@
+ 
+-Dynamic section at offset 0x19318 contains 135 entries:
++Dynamic section at offset 0x19318 contains 136 entries:
+   Tag        Type                         Name/Value
+  0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_fastrtps_c.so]
+  0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_introspection_c.so]
+@@ -111,6 +111,7 @@
+  0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+  0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+  0x000000000000000e (SONAME)             Library soname: [libmoveit_move_group_capabilities_base.so.2.5.9]
++ 0x000000000000000f (RPATH)              Library rpath: [/opt/ros/humble/lib:/opt/ros/humble/lib64]
+  0x000000000000000c (INIT)               0x7000
+  0x000000000000000d (FINI)               0x14888
+  0x0000000000000019 (INIT_ARRAY)         0x19268
+@@ -120,7 +121,7 @@
+  0x000000006ffffef5 (GNU_HASH)           0x300
+  0x0000000000000005 (STRTAB)             0x1b00
+  0x0000000000000006 (SYMTAB)             0x7b0
+- 0x000000000000000a (STRSZ)              16513 (bytes)
++ 0x000000000000000a (STRSZ)              16512 (bytes)
+  0x000000000000000b (SYMENT)             24 (bytes)
+  0x0000000000000003 (PLTGOT)             0x19bd8
+  0x0000000000000002 (PLTRELSZ)           2712 (bytes)
+@@ -133,6 +134,6 @@
+  0x000000006ffffffb (FLAGS_1)            Flags: NOW
+  0x000000006ffffffe (VERNEED)            0x5d20
+  0x000000006fffffff (VERNEEDNUM)         3
+- 0x000000006ffffff0 (VERSYM)             0x5b82
++ 0x000000006ffffff0 (VERSYM)             0x5b80
+  0x000000006ffffff9 (RELACOUNT)          25
+  0x0000000000000000 (NULL)               0x0
+[objdump -T] 差异：
+--- old/objdump-T
++++ new/objdump-T
+@@ -1,5 +1,5 @@
+ 
+-err_Packages/libmoveit_move_group_capabilities_base.so.2.5.9:     file format elf64-x86-64
++Packages/libmoveit_move_group_capabilities_base.so.2.5.9:     file format elf64-x86-64
+ 
+ DYNAMIC SYMBOL TABLE:
+ 0000000000000000      DF *UND*	0000000000000000  Base        _ZN14plan_execution13PlanExecutionC1ERKSt10shared_ptrIN6rclcpp4NodeEERKS1_IN22planning_scene_monitor20PlanningSceneMonitorEERKS1_IN28trajectory_execution_manager26TrajectoryExecutionManagerEE
+[objdump -d] 开始对比反汇编代码（仅显示差异行）...
+--- old/objdump-d
++++ new/objdump-d
+@@ -1,5 +1,5 @@
+ 
+-err_Packages/libmoveit_move_group_capabilities_base.so.2.5.9:     file format elf64-x86-64
++Packages/libmoveit_move_group_capabilities_base.so.2.5.9:     file format elf64-x86-64
+ 
+ 
+ Disassembly of section .init:
+================================================================================
+比较文件: libmoveit_move_group_default_capabilities.so.2.5.9
+[大小] 1101648 vs 1101648 bytes
+[MD5 ] 2463c2fed3756ab013190a9d7173742f vs d2ce3128313e100e89e2ff2192a934eb
+[SHA256] 1a18026f373af8ca40eee70ab97f69415402add9c0222dd02a1cd1ec9072bbc1 vs 24b91dbb34da542362c29da3a520e43f5b2ae25e7bd581084b0302f09aad1db7
+[file] 差异：
+--- old/file
++++ new/file
+@@ -1 +1 @@
+-err_Packages/libmoveit_move_group_default_capabilities.so.2.5.9: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=f57da0334668023721d33f76d6d3290a13cdd77f, stripped
++Packages/libmoveit_move_group_default_capabilities.so.2.5.9: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=20f9f2b81207f99bee5c180764ddc47a8124aaae, stripped
+[readelf -d] 差异：
+--- old/readelf-d
++++ new/readelf-d
+@@ -1,5 +1,5 @@
+ 
+-Dynamic section at offset 0x1096d0 contains 142 entries:
++Dynamic section at offset 0x1096d0 contains 143 entries:
+   Tag        Type                         Name/Value
+  0x0000000000000001 (NEEDED)             Shared library: [libmoveit_move_group_capabilities_base.so.2.5.9]
+  0x0000000000000001 (NEEDED)             Shared library: [libstd_srvs__rosidl_typesupport_fastrtps_c.so]
+@@ -118,6 +118,7 @@
+  0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+  0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+  0x000000000000000e (SONAME)             Library soname: [libmoveit_move_group_default_capabilities.so.2.5.9]
++ 0x000000000000000f (RPATH)              Library rpath: [/opt/ros/humble/lib:/opt/ros/humble/lib64]
+  0x000000000000000c (INIT)               0x6b000
+  0x000000000000000d (FINI)               0xde4dc
+  0x0000000000000019 (INIT_ARRAY)         0x106018
+@@ -127,19 +128,19 @@
+  0x000000006ffffef5 (GNU_HASH)           0x300
+  0x0000000000000005 (STRTAB)             0x10b78
+  0x0000000000000006 (SYMTAB)             0x38d0
+- 0x000000000000000a (STRSZ)              300059 (bytes)
++ 0x000000000000000a (STRSZ)              299962 (bytes)
+  0x000000000000000b (SYMENT)             24 (bytes)
+  0x0000000000000003 (PLTGOT)             0x10a000
+  0x0000000000000002 (PLTRELSZ)           15048 (bytes)
+  0x0000000000000014 (PLTREL)             RELA
+- 0x0000000000000017 (JMPREL)             0x67190
+- 0x0000000000000007 (RELA)               0x5b2c8
++ 0x0000000000000017 (JMPREL)             0x67128
++ 0x0000000000000007 (RELA)               0x5b260
+  0x0000000000000008 (RELASZ)             48840 (bytes)
+  0x0000000000000009 (RELAENT)            24 (bytes)
+  0x0000000000000018 (BIND_NOW)           
+  0x000000006ffffffb (FLAGS_1)            Flags: NOW
+- 0x000000006ffffffe (VERNEED)            0x5b128
++ 0x000000006ffffffe (VERNEED)            0x5b0c0
+  0x000000006fffffff (VERNEEDNUM)         4
+- 0x000000006ffffff0 (VERSYM)             0x59f94
++ 0x000000006ffffff0 (VERSYM)             0x59f32
+  0x000000006ffffff9 (RELACOUNT)          159
+  0x0000000000000000 (NULL)               0x0
+[objdump -T] 差异：
+--- old/objdump-T
++++ new/objdump-T
+@@ -1,5 +1,5 @@
+ 
+-err_Packages/libmoveit_move_group_default_capabilities.so.2.5.9:     file format elf64-x86-64
++Packages/libmoveit_move_group_default_capabilities.so.2.5.9:     file format elf64-x86-64
+ 
+ DYNAMIC SYMBOL TABLE:
+ 0000000000000000      DF *UND*	0000000000000000  Base        _ZN6rclcpp17memory_strategies23create_default_strategyEv
+[objdump -d] 开始对比反汇编代码（仅显示差异行）...
+--- old/objdump-d
++++ new/objdump-d
+@@ -1,5 +1,5 @@
+ 
+-err_Packages/libmoveit_move_group_default_capabilities.so.2.5.9:     file format elf64-x86-64
++Packages/libmoveit_move_group_default_capabilities.so.2.5.9:     file format elf64-x86-64
+ 
+ 
+ Disassembly of section .init:
+================================================================================
+比较完成！
+日志已保存到: compare_result_20250831_014724.log

@@ -1,0 +1,205 @@
+                 U __cxa_atexit
+                 U __cxa_begin_catch
+                 U __cxa_end_catch
+                 w __cxa_finalize
+                 U __cxa_rethrow
+                 U fwrite
+                 w __gmon_start__
+                 U g_rcutils_logging_initialized
+                 U __gxx_personality_v0
+                 w _ITM_deregisterTMCloneTable
+                 w _ITM_registerTMCloneTable
+                 U __libc_single_threaded
+                 U memcmp
+                 U memcpy
+                 U memmove
+                 U rcutils_get_error_string
+                 U rcutils_log
+                 U rcutils_logging_initialize
+                 U rcutils_logging_logger_is_enabled_for
+                 U rcutils_reset_error
+                 U __stack_chk_fail
+                 U stderr
+                 U strcmp
+                 U strlen
+                 U _Unwind_Resume
+                 U operator delete(void*, unsigned long)
+00000000000085a0 T move_group::MoveGroupContext::MoveGroupContext(std::shared_ptr<moveit_cpp::MoveItCpp> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+00000000000085a0 T move_group::MoveGroupContext::MoveGroupContext(std::shared_ptr<moveit_cpp::MoveItCpp> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+0000000000008060 T move_group::MoveGroupContext::~MoveGroupContext()
+0000000000008060 T move_group::MoveGroupContext::~MoveGroupContext()
+000000000000b510 T move_group::MoveGroupCapability::setContext(std::shared_ptr<move_group::MoveGroupContext> const&)
+000000000000aed0 T move_group::MoveGroupCapability::getActionResultString[abi:cxx11](moveit_msgs::msg::MoveItErrorCodes_<std::allocator<void> > const&, bool, bool)
+00000000000125f0 W moveit_msgs::msg::RobotState_<std::allocator<void> >::RobotState_(moveit_msgs::msg::RobotState_<std::allocator<void> > const&)
+00000000000125f0 W moveit_msgs::msg::RobotState_<std::allocator<void> >::RobotState_(moveit_msgs::msg::RobotState_<std::allocator<void> > const&)
+000000000000d580 W moveit_msgs::msg::RobotState_<std::allocator<void> >::~RobotState_()
+000000000000d580 W moveit_msgs::msg::RobotState_<std::allocator<void> >::~RobotState_()
+0000000000011ac0 W moveit_msgs::msg::Constraints_<std::allocator<void> >::Constraints_(moveit_msgs::msg::Constraints_<std::allocator<void> > const&)
+0000000000011ac0 W moveit_msgs::msg::Constraints_<std::allocator<void> >::Constraints_(moveit_msgs::msg::Constraints_<std::allocator<void> > const&)
+000000000000ce60 W moveit_msgs::msg::Constraints_<std::allocator<void> >::~Constraints_()
+000000000000ce60 W moveit_msgs::msg::Constraints_<std::allocator<void> >::~Constraints_()
+0000000000012db0 W moveit_msgs::msg::PlanningScene_<std::allocator<void> >::PlanningScene_(moveit_msgs::msg::PlanningScene_<std::allocator<void> > const&)
+0000000000012db0 W moveit_msgs::msg::PlanningScene_<std::allocator<void> >::PlanningScene_(moveit_msgs::msg::PlanningScene_<std::allocator<void> > const&)
+000000000000dab0 W moveit_msgs::msg::PlanningScene_<std::allocator<void> >::~PlanningScene_()
+000000000000dab0 W moveit_msgs::msg::PlanningScene_<std::allocator<void> >::~PlanningScene_()
+0000000000010750 W moveit_msgs::msg::CollisionObject_<std::allocator<void> >::CollisionObject_(moveit_msgs::msg::CollisionObject_<std::allocator<void> > const&)
+0000000000010750 W moveit_msgs::msg::CollisionObject_<std::allocator<void> >::CollisionObject_(moveit_msgs::msg::CollisionObject_<std::allocator<void> > const&)
+000000000000d340 W moveit_msgs::msg::CollisionObject_<std::allocator<void> >::~CollisionObject_()
+000000000000d340 W moveit_msgs::msg::CollisionObject_<std::allocator<void> >::~CollisionObject_()
+000000000000dee0 W moveit_msgs::msg::GenericTrajectory_<std::allocator<void> >::~GenericTrajectory_()
+000000000000dee0 W moveit_msgs::msg::GenericTrajectory_<std::allocator<void> >::~GenericTrajectory_()
+0000000000014150 W moveit_msgs::msg::MotionPlanRequest_<std::allocator<void> >::MotionPlanRequest_(moveit_msgs::msg::MotionPlanRequest_<std::allocator<void> > const&)
+0000000000014150 W moveit_msgs::msg::MotionPlanRequest_<std::allocator<void> >::MotionPlanRequest_(moveit_msgs::msg::MotionPlanRequest_<std::allocator<void> > const&)
+000000000000e7f0 W moveit_msgs::msg::MotionPlanRequest_<std::allocator<void> >::~MotionPlanRequest_()
+000000000000e7f0 W moveit_msgs::msg::MotionPlanRequest_<std::allocator<void> >::~MotionPlanRequest_()
+0000000000011110 W moveit_msgs::msg::PlanningSceneWorld_<std::allocator<void> >::PlanningSceneWorld_(moveit_msgs::msg::PlanningSceneWorld_<std::allocator<void> > const&)
+0000000000011110 W moveit_msgs::msg::PlanningSceneWorld_<std::allocator<void> >::PlanningSceneWorld_(moveit_msgs::msg::PlanningSceneWorld_<std::allocator<void> > const&)
+000000000000d130 W moveit_msgs::msg::PositionConstraint_<std::allocator<void> >::~PositionConstraint_()
+000000000000d130 W moveit_msgs::msg::PositionConstraint_<std::allocator<void> >::~PositionConstraint_()
+000000000000de80 W moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> >::~CartesianTrajectory_()
+000000000000de80 W moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> >::~CartesianTrajectory_()
+000000000000ee40 W moveit_msgs::msg::AllowedCollisionMatrix_<std::allocator<void> >::AllowedCollisionMatrix_(moveit_msgs::msg::AllowedCollisionMatrix_<std::allocator<void> > const&)
+000000000000ee40 W moveit_msgs::msg::AllowedCollisionMatrix_<std::allocator<void> >::AllowedCollisionMatrix_(moveit_msgs::msg::AllowedCollisionMatrix_<std::allocator<void> > const&)
+000000000000cd40 W moveit_msgs::msg::AllowedCollisionMatrix_<std::allocator<void> >::~AllowedCollisionMatrix_()
+000000000000cd40 W moveit_msgs::msg::AllowedCollisionMatrix_<std::allocator<void> >::~AllowedCollisionMatrix_()
+000000000000d900 W moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> >::~AttachedCollisionObject_()
+000000000000d900 W moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> >::~AttachedCollisionObject_()
+000000000000cc70 W sensor_msgs::msg::JointState_<std::allocator<void> >::~JointState_()
+000000000000cc70 W sensor_msgs::msg::JointState_<std::allocator<void> >::~JointState_()
+000000000000d270 W sensor_msgs::msg::MultiDOFJointState_<std::allocator<void> >::~MultiDOFJointState_()
+000000000000d270 W sensor_msgs::msg::MultiDOFJointState_<std::allocator<void> >::~MultiDOFJointState_()
+                 U plan_execution::PlanExecution::PlanExecution(std::shared_ptr<rclcpp::Node> const&, std::shared_ptr<planning_scene_monitor::PlanningSceneMonitor> const&, std::shared_ptr<trajectory_execution_manager::TrajectoryExecutionManager> const&)
+                 U plan_execution::PlanExecution::~PlanExecution()
+000000000000caf0 W trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >::~JointTrajectory_()
+000000000000caf0 W trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >::~JointTrajectory_()
+000000000000cc00 W trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >::~JointTrajectoryPoint_()
+000000000000cc00 W trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >::~JointTrajectoryPoint_()
+                 U planning_pipeline::PlanningPipeline::checkSolutionPaths(bool)
+                 U planning_pipeline::PlanningPipeline::publishReceivedRequests(bool)
+                 U planning_pipeline::PlanningPipeline::displayComputedMotionPlans(bool)
+                 U KDL::Rotation::Quaternion(double, double, double, double)
+                 U KDL::operator*(KDL::Rotation const&, KDL::Rotation const&)
+000000000000f050 W void tf2::doTransform<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >(geometry_msgs::msg::PoseStamped_<std::allocator<void> > const&, geometry_msgs::msg::PoseStamped_<std::allocator<void> >&, geometry_msgs::msg::TransformStamped_<std::allocator<void> > const&)
+                 U tf2::durationFromSec(double)
+                 U moveit::core::robotStateToRobotStateMsg(moveit::core::RobotState const&, moveit_msgs::msg::RobotState_<std::allocator<void> >&, bool)
+                 U rclcpp::get_logger(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+                 U rclcpp::Time::Time(long, rcl_clock_type_e)
+                 U rclcpp::Time::~Time()
+0000000000009d40 W rclcpp::Logger::~Logger()
+0000000000009d40 W rclcpp::Logger::~Logger()
+                 U rclcpp::Duration::from_nanoseconds(long)
+0000000000008db0 T move_group::MoveGroupContext::status() const
+000000000000b0f0 T move_group::MoveGroupCapability::stateToStr[abi:cxx11](move_group::MoveGroupState) const
+000000000000b5e0 T move_group::MoveGroupCapability::convertToMsg(std::shared_ptr<robot_trajectory::RobotTrajectory> const&, moveit_msgs::msg::RobotState_<std::allocator<void> >&, moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >&) const
+000000000000b6f0 T move_group::MoveGroupCapability::convertToMsg(std::vector<plan_execution::ExecutableTrajectory, std::allocator<plan_execution::ExecutableTrajectory> > const&, moveit_msgs::msg::RobotState_<std::allocator<void> >&, moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >&) const
+000000000000bc80 T move_group::MoveGroupCapability::convertToMsg(std::vector<plan_execution::ExecutableTrajectory, std::allocator<plan_execution::ExecutableTrajectory> > const&, moveit_msgs::msg::RobotState_<std::allocator<void> >&, std::vector<moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >, std::allocator<moveit_msgs::msg::RobotTrajectory_<std::allocator<void> > > >&) const
+000000000000c640 T move_group::MoveGroupCapability::performTransform(geometry_msgs::msg::PoseStamped_<std::allocator<void> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+000000000000c120 T move_group::MoveGroupCapability::clearSceneRobotState(moveit_msgs::msg::PlanningScene_<std::allocator<void> > const&) const
+000000000000c3b0 T move_group::MoveGroupCapability::clearRequestStartState(moveit_msgs::msg::MotionPlanRequest_<std::allocator<void> > const&) const
+000000000000b1a0 T move_group::MoveGroupCapability::resolvePlanningPipeline(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+                 U moveit_cpp::MoveItCpp::getPlanningPipelines[abi:cxx11]() const
+                 U moveit_cpp::MoveItCpp::getPlanningSceneMonitor() const
+                 U moveit_cpp::MoveItCpp::getTrajectoryExecutionManager() const
+                 U moveit_cpp::MoveItCpp::getNode() const
+                 U robot_trajectory::RobotTrajectory::getRobotTrajectoryMsg(moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) const
+                 U KDL::Rotation::GetQuaternion(double&, double&, double&, double&) const
+                 U rclcpp::Time::nanoseconds() const
+                 U rclcpp::Duration::nanoseconds() const
+0000000000009ea0 W std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<planning_pipeline::PlanningPipeline> >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<planning_pipeline::PlanningPipeline> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<planning_pipeline::PlanningPipeline> > > >::find(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+                 U std::basic_iostream<char, std::char_traits<char> >::~basic_iostream()
+000000000000f380 W void std::_Destroy_aux<false>::__destroy<moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >*>(moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >*, moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >*)
+000000000000e170 W std::_Vector_base<double, std::allocator<double> >::~_Vector_base()
+000000000000e170 W std::_Vector_base<double, std::allocator<double> >::~_Vector_base()
+000000000000efc0 W std::_Vector_base<shape_msgs::msg::SolidPrimitive_<std::allocator<void> >, std::allocator<shape_msgs::msg::SolidPrimitive_<std::allocator<void> > > >::~_Vector_base()
+000000000000efc0 W std::_Vector_base<shape_msgs::msg::SolidPrimitive_<std::allocator<void> >, std::allocator<shape_msgs::msg::SolidPrimitive_<std::allocator<void> > > >::~_Vector_base()
+000000000000f020 W std::_Vector_base<shape_msgs::msg::Mesh_<std::allocator<void> >, std::allocator<shape_msgs::msg::Mesh_<std::allocator<void> > > >::~_Vector_base()
+000000000000f020 W std::_Vector_base<shape_msgs::msg::Mesh_<std::allocator<void> >, std::allocator<shape_msgs::msg::Mesh_<std::allocator<void> > > >::~_Vector_base()
+000000000000e970 W std::_Vector_base<moveit_msgs::msg::Constraints_<std::allocator<void> >, std::allocator<moveit_msgs::msg::Constraints_<std::allocator<void> > > >::~_Vector_base()
+000000000000e970 W std::_Vector_base<moveit_msgs::msg::Constraints_<std::allocator<void> >, std::allocator<moveit_msgs::msg::Constraints_<std::allocator<void> > > >::~_Vector_base()
+000000000000eff0 W std::_Vector_base<geometry_msgs::msg::Pose_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Pose_<std::allocator<void> > > >::~_Vector_base()
+000000000000eff0 W std::_Vector_base<geometry_msgs::msg::Pose_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Pose_<std::allocator<void> > > >::~_Vector_base()
+000000000000e1a0 W std::_Vector_base<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >::~_Vector_base()
+000000000000e1a0 W std::_Vector_base<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >::~_Vector_base()
+000000000000e140 W std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~_Vector_base()
+000000000000e140 W std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~_Vector_base()
+000000000000ec80 W std::_Bvector_base<std::allocator<bool> >::_M_deallocate()
+0000000000009cc0 W std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()
+0000000000009c70 W std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release_last_use_cold()
+0000000000009c60 W std::_Sp_counted_ptr_inplace<plan_execution::PlanExecution, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+0000000000009c10 W std::_Sp_counted_ptr_inplace<plan_execution::PlanExecution, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+0000000000009c20 W std::_Sp_counted_ptr_inplace<plan_execution::PlanExecution, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)
+0000000000009c00 W std::_Sp_counted_ptr_inplace<plan_execution::PlanExecution, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()
+0000000000009bf0 W std::_Sp_counted_ptr_inplace<plan_execution::PlanExecution, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()
+0000000000009bf0 W std::_Sp_counted_ptr_inplace<plan_execution::PlanExecution, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()
+                 U std::locale::locale()
+                 U std::locale::~locale()
+000000000000ecc0 W std::vector<bool, std::allocator<bool> >::vector(std::vector<bool, std::allocator<bool> > const&)
+000000000000ecc0 W std::vector<bool, std::allocator<bool> >::vector(std::vector<bool, std::allocator<bool> > const&)
+000000000000e450 W std::vector<shape_msgs::msg::SolidPrimitive_<std::allocator<void> >, std::allocator<shape_msgs::msg::SolidPrimitive_<std::allocator<void> > > >::~vector()
+000000000000e450 W std::vector<shape_msgs::msg::SolidPrimitive_<std::allocator<void> >, std::allocator<shape_msgs::msg::SolidPrimitive_<std::allocator<void> > > >::~vector()
+000000000000e4d0 W std::vector<shape_msgs::msg::Mesh_<std::allocator<void> >, std::allocator<shape_msgs::msg::Mesh_<std::allocator<void> > > >::~vector()
+000000000000e4d0 W std::vector<shape_msgs::msg::Mesh_<std::allocator<void> >, std::allocator<shape_msgs::msg::Mesh_<std::allocator<void> > > >::~vector()
+000000000000e550 W std::vector<moveit_msgs::msg::Constraints_<std::allocator<void> >, std::allocator<moveit_msgs::msg::Constraints_<std::allocator<void> > > >::~vector()
+000000000000e550 W std::vector<moveit_msgs::msg::Constraints_<std::allocator<void> >, std::allocator<moveit_msgs::msg::Constraints_<std::allocator<void> > > >::~vector()
+000000000000f5a0 W std::vector<moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >, std::allocator<moveit_msgs::msg::RobotTrajectory_<std::allocator<void> > > >::_M_default_append(unsigned long)
+000000000000e5b0 W std::vector<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> >, std::allocator<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> > > >::~vector()
+000000000000e5b0 W std::vector<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> >, std::allocator<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> > > >::~vector()
+000000000000e250 W std::vector<moveit_msgs::msg::PositionConstraint_<std::allocator<void> >, std::allocator<moveit_msgs::msg::PositionConstraint_<std::allocator<void> > > >::~vector()
+000000000000e250 W std::vector<moveit_msgs::msg::PositionConstraint_<std::allocator<void> >, std::allocator<moveit_msgs::msg::PositionConstraint_<std::allocator<void> > > >::~vector()
+000000000000e3d0 W std::vector<moveit_msgs::msg::OrientationConstraint_<std::allocator<void> >, std::allocator<moveit_msgs::msg::OrientationConstraint_<std::allocator<void> > > >::~vector()
+000000000000e3d0 W std::vector<moveit_msgs::msg::OrientationConstraint_<std::allocator<void> >, std::allocator<moveit_msgs::msg::OrientationConstraint_<std::allocator<void> > > >::~vector()
+000000000000e1d0 W std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >::~vector()
+000000000000e1d0 W std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >::~vector()
+000000000000e9a0 W std::vector<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> > > >::~vector()
+000000000000e9a0 W std::vector<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> > > >::~vector()
+000000000000eaf0 W std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+000000000000eaf0 W std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+000000000000e0d0 W std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()
+000000000000e0d0 W std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()
+0000000000009e70 W std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()
+0000000000009fa0 W std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+000000000000a090 W std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long)
+0000000000009e10 W std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf()
+0000000000009dc0 W std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf()
+0000000000009dc0 W std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf()
+                 U std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_stringstream()
+                 U std::ios_base::Init::Init()
+                 U std::ios_base::Init::~Init()
+                 U std::ios_base::ios_base()
+                 U std::ios_base::~ios_base()
+                 U std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)
+                 U operator new(unsigned long)
+00000000000102a0 W shape_msgs::msg::SolidPrimitive_<std::allocator<void> >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<shape_msgs::msg::SolidPrimitive_<std::allocator<void> > const*, std::vector<shape_msgs::msg::SolidPrimitive_<std::allocator<void> >, std::allocator<shape_msgs::msg::SolidPrimitive_<std::allocator<void> > > > >, shape_msgs::msg::SolidPrimitive_<std::allocator<void> >*>(__gnu_cxx::__normal_iterator<shape_msgs::msg::SolidPrimitive_<std::allocator<void> > const*, std::vector<shape_msgs::msg::SolidPrimitive_<std::allocator<void> >, std::allocator<shape_msgs::msg::SolidPrimitive_<std::allocator<void> > > > >, __gnu_cxx::__normal_iterator<shape_msgs::msg::SolidPrimitive_<std::allocator<void> > const*, std::vector<shape_msgs::msg::SolidPrimitive_<std::allocator<void> >, std::allocator<shape_msgs::msg::SolidPrimitive_<std::allocator<void> > > > >, shape_msgs::msg::SolidPrimitive_<std::allocator<void> >*)
+00000000000104e0 W shape_msgs::msg::Mesh_<std::allocator<void> >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<shape_msgs::msg::Mesh_<std::allocator<void> > const*, std::vector<shape_msgs::msg::Mesh_<std::allocator<void> >, std::allocator<shape_msgs::msg::Mesh_<std::allocator<void> > > > >, shape_msgs::msg::Mesh_<std::allocator<void> >*>(__gnu_cxx::__normal_iterator<shape_msgs::msg::Mesh_<std::allocator<void> > const*, std::vector<shape_msgs::msg::Mesh_<std::allocator<void> >, std::allocator<shape_msgs::msg::Mesh_<std::allocator<void> > > > >, __gnu_cxx::__normal_iterator<shape_msgs::msg::Mesh_<std::allocator<void> > const*, std::vector<shape_msgs::msg::Mesh_<std::allocator<void> >, std::allocator<shape_msgs::msg::Mesh_<std::allocator<void> > > > >, shape_msgs::msg::Mesh_<std::allocator<void> >*)
+0000000000013b40 W moveit_msgs::msg::GenericTrajectory_<std::allocator<void> >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> >, std::allocator<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> > > > >, moveit_msgs::msg::GenericTrajectory_<std::allocator<void> >*>(__gnu_cxx::__normal_iterator<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> >, std::allocator<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> > > > >, __gnu_cxx::__normal_iterator<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> >, std::allocator<moveit_msgs::msg::GenericTrajectory_<std::allocator<void> > > > >, moveit_msgs::msg::GenericTrajectory_<std::allocator<void> >*)
+0000000000011540 W moveit_msgs::msg::PositionConstraint_<std::allocator<void> >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<moveit_msgs::msg::PositionConstraint_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::PositionConstraint_<std::allocator<void> >, std::allocator<moveit_msgs::msg::PositionConstraint_<std::allocator<void> > > > >, moveit_msgs::msg::PositionConstraint_<std::allocator<void> >*>(__gnu_cxx::__normal_iterator<moveit_msgs::msg::PositionConstraint_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::PositionConstraint_<std::allocator<void> >, std::allocator<moveit_msgs::msg::PositionConstraint_<std::allocator<void> > > > >, __gnu_cxx::__normal_iterator<moveit_msgs::msg::PositionConstraint_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::PositionConstraint_<std::allocator<void> >, std::allocator<moveit_msgs::msg::PositionConstraint_<std::allocator<void> > > > >, moveit_msgs::msg::PositionConstraint_<std::allocator<void> >*)
+0000000000013820 W moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> >, std::allocator<moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> > > > >, moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> >*>(__gnu_cxx::__normal_iterator<moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> >, std::allocator<moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> > > > >, __gnu_cxx::__normal_iterator<moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> >, std::allocator<moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> > > > >, moveit_msgs::msg::CartesianTrajectory_<std::allocator<void> >*)
+0000000000010040 W moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> >, std::allocator<moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> > > > >, moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> >*>(__gnu_cxx::__normal_iterator<moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> >, std::allocator<moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> > > > >, __gnu_cxx::__normal_iterator<moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> >, std::allocator<moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> > > > >, moveit_msgs::msg::VisibilityConstraint_<std::allocator<void> >*)
+0000000000012140 W moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> >, std::allocator<moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> > > > >, moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> >*>(__gnu_cxx::__normal_iterator<moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> >, std::allocator<moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> > > > >, __gnu_cxx::__normal_iterator<moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> > const*, std::vector<moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> >, std::allocator<moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> > > > >, moveit_msgs::msg::AttachedCollisionObject_<std::allocator<void> >*)
+000000000000fd10 W trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > const*, std::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > > >, trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >*>(__gnu_cxx::__normal_iterator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > const*, std::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > > >, __gnu_cxx::__normal_iterator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > const*, std::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > > >, trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >*)
+                 U std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+                 U std::__throw_bad_alloc()
+                 U std::__throw_length_error(char const*)
+                 U std::__throw_out_of_range(char const*)
+                 U std::__glibcxx_assert_fail(char const*, int, char const*, char const*)
+                 U std::__throw_bad_array_new_length()
+0000000000019300 V typeinfo for tf2::TransformException
+0000000000019288 V typeinfo for std::_Mutex_base<(__gnu_cxx::_Lock_policy)2>
+                 U typeinfo for std::out_of_range
+                 U typeinfo for std::runtime_error
+0000000000019298 V typeinfo for std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>
+00000000000192b0 V typeinfo for std::_Sp_counted_ptr_inplace<plan_execution::PlanExecution, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>
+0000000000016300 V typeinfo name for tf2::TransformException
+0000000000016160 V typeinfo name for std::_Mutex_base<(__gnu_cxx::_Lock_policy)2>
+00000000000161c0 V typeinfo name for std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>
+0000000000016190 V typeinfo name for std::_Sp_make_shared_tag
+0000000000016200 V typeinfo name for std::_Sp_counted_ptr_inplace<plan_execution::PlanExecution, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>
+                 U VTT for std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >
+                 U vtable for __cxxabiv1::__class_type_info
+                 U vtable for __cxxabiv1::__si_class_type_info
+                 U vtable for std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >
+                 U vtable for std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >
+                 U vtable for std::basic_streambuf<char, std::char_traits<char> >
+00000000000192c8 V vtable for std::_Sp_counted_ptr_inplace<plan_execution::PlanExecution, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>
+                 U vtable for std::basic_ios<char, std::char_traits<char> >
+0000000000016268 u std::_Sp_make_shared_tag::_S_ti()::__tag
