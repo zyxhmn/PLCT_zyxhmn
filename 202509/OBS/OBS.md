@@ -1,4 +1,4 @@
-# OBS
+OBS
 
 # OBS介绍
 
@@ -232,10 +232,10 @@ arch:`pacman -S qemu qemu-user-static`
 osc co home:zhouyu:branches:openEuler:24.03/which
 ```
 
-
-
 ![26](assets/26-20250928164616-oplze6t.png)
+
 进入软件包所在目录，使用`osc up -S`将代码同步到本地
+
 ![27](assets/27-20250928164616-ymsgmy9.png)
 此时直接执行`osc build`会报错，需要将文件前的`_service:`删除：
 
@@ -254,6 +254,7 @@ done
 
 
 ![20](assets/20-20250928164616-hdq2vsv.png)
+
 回到工程类查看名称为`mainline_riscv64`,则编译命令为：
 
 ```bash
