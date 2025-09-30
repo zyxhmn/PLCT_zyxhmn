@@ -124,6 +124,9 @@ openEuler obs网址：https://build.tarsier-infra.isrc.ac.cn/
     假设我要修which包：
     ![10](assets/10-20250928164616-5j6eb7f.png)
     点击Branch package按钮
+    
+    
+    
     ![11](assets/11-20250928164616-u7ygtiw.png)
     
     
@@ -207,7 +210,8 @@ vim .config/osc/oscrc
 
 ```
 [general]
-apiurl = https://build.tarsier-infra.isrc.ac.cn/                       no_verify  = 1      
+apiurl = https://build.tarsier-infra.isrc.ac.cn/                       
+no_verify  = 1      
 [https://build.tarsier-infra.isrc.ac.cn/]   
 user=xxxx             
 pass=xxxx
